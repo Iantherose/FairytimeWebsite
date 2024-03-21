@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__YGameSDK__ShowBanner !== "undefined") {
 gdjs.evtsExt__YGameSDK__ShowBanner = {};
 
 
-gdjs.evtsExt__YGameSDK__ShowBanner.userFunc0xd32ee8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__YGameSDK__ShowBanner.userFunc0x1160240 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 
 try {
@@ -38,7 +38,7 @@ gdjs.evtsExt__YGameSDK__ShowBanner.eventsList0 = function(runtimeScene, eventsFu
 {
 
 
-gdjs.evtsExt__YGameSDK__ShowBanner.userFunc0xd32ee8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__YGameSDK__ShowBanner.userFunc0x1160240(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

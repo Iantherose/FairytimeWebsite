@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__YGameSDK__GetPlayerName !== "undefined") {
 gdjs.evtsExt__YGameSDK__GetPlayerName = {};
 
 
-gdjs.evtsExt__YGameSDK__GetPlayerName.userFunc0xd32ee8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__YGameSDK__GetPlayerName.userFunc0x1160240 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 var playerName = runtimeScene.getGame().getVariables().get(eventsFunctionContext.getArgument("PlayerName"));
 var name = window.player_ysdk.getName();
@@ -19,7 +19,7 @@ gdjs.evtsExt__YGameSDK__GetPlayerName.eventsList0 = function(runtimeScene, event
 {
 
 
-gdjs.evtsExt__YGameSDK__GetPlayerName.userFunc0xd32ee8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__YGameSDK__GetPlayerName.userFunc0x1160240(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__YGameSDK__InitPayments !== "undefined") {
 gdjs.evtsExt__YGameSDK__InitPayments = {};
 
 
-gdjs.evtsExt__YGameSDK__InitPayments.userFunc0xd66b48 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__YGameSDK__InitPayments.userFunc0xd6d1d8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 var isInitPayment = runtimeScene.getGame().getVariables().get("YGSDK_Payment_IsInit");
 isInitPayment.setBoolean(false);
@@ -28,7 +28,7 @@ gdjs.evtsExt__YGameSDK__InitPayments.eventsList0 = function(runtimeScene, events
 {
 
 
-gdjs.evtsExt__YGameSDK__InitPayments.userFunc0xd66b48(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__YGameSDK__InitPayments.userFunc0xd6d1d8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
