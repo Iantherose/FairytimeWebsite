@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fairytime Website</title>
+    <style>
+
+        html, body {
+height: 100%;
+        }
+
+
+        body {
+        
+            background-image: url('assets/pictures/sky.png');
+            background-size: cover;
+            /* Cover the entire screen with the background image */
+            background-position: center;
+            /* Center the background image */
+            display: flex;
+        flex-direction: row;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            background-image: radial-gradient(circle at bottom center, rgba(248,182,158, 0.55),rgb(245,192,223));
+            border: px solid #fff5f9;
+            padding: 20px;
+            width: 50%;
+            border-radius: 70px 70px 20px 20px;
+position: relative;
+            margin-top: 600px;
+            /* Adjust the margin-top to position higher */
+        }
+
+        .leftSide {
+            z-index: 30;
+            width: 300px;
+            /* Adjust width as needed */
+            height: min-content;
+                   /* Background color */
+            left: calc(10px + 0.5vw);
+            /* Position on the left side */
+            top: 40;
+            /* Start from the top */
+            background-image: linear-gradient(227deg, rgb(245,192,223) 0%, rgb(245,192,223) 77%,rgb(248,171,207) 77%, rgb(248,171,207) 86%,rgb(219,248,204) 86%, rgb(219,248,204) 91%,rgb(174,225,209) 91%, rgb(174,225,209) 100%);
+            border: px solid #fff5f9;
+            padding: 20px;
+            border-radius: 20px 20px 20px 20px;
+            margin-top: 600px;
+            /* Adjust the margin-top to position higher */
+            color: #c24c8d;
+            font-size: 16px;
+            font-family: "Corben", serif;
+            font-weight: 400;
+            font-style: normal;
+            transition:  3s;
+            
+        }
+
+        ::-webkit-scrollbar {
+color: #ffffff;
+background-color: #ec87be;
+        }
+
+        ::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #ffffff, #ec87be);
+  -moz-outline-radius: 100px;
+}
+
+title{
+    background-color: #ec87be;
+}
+        .rightSide {
+            width: 300px;
+            /* Adjust width as needed */
+            height: max-content;
+            /* Full height of the viewport */
+            right: calc(10px + 0.5vw);
+            /* Position on the left side */
+            top: 0px;
+            /* Start from the top */
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 20px 20px 20px 20px;
+            margin-top: 30%;
+            /* Adjust the margin-top to position higher */
+            color: #a84272;
+            font-size: 16px;
+            font-family: "Corben", serif;
+            font-weight: 400;
+            font-style: normal;
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            gap: 1em;
+        }
+
+        .header {
+            background-image: url('assets/pictures/banner.png');
+            background-size: cover;
+            border-radius: 50px 50px 0 0;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .navigation {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .navigation button {
+            background-color: #ec87be;
+            box-shadow: 0 3px 4px rgba(160, 59, 130, 0.753);
+            color: white;
+            padding: 10px 40px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            font-family: "Corben", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .description {
+            text-align: left;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+
+        .description p {
+            color: #c24c8d;
+            font-size: 16px;
+            font-family: "Corben", serif;
+            font-weight: 400;
+            font-style: normal
+        }
+
+        .large {
+            font-size: 60px;
+            font-family: "Corben", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+            /* Adjusted margin */
+            border-radius: 20px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 3px 4px rgba(160, 59, 130, 0.753);
+        }
+
+        .shortlinks {
+            border-radius: 20px;
+
+            transition: 1s;
+            border: 10px;
+        }
+
+        h1 {
+            font-family: "Corben", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        h2 {
+            margin: 0%;
+            color: #ec87be;
+            -webkit-text-stroke: 1px rgb(221, 29, 148);
+            text-shadow: 2px 2px #ff0095;
+            
+        }
+
+        h3 {
+            margin: 0%;
+            color: #ffffff;
+            text-shadow: 2px 2px #f344aa;
+        }
+
+
+        .banner {
+            display: block;
+            position: absolute;
+            bottom: 500px;
+            text-align: left;
+            color: #fff;
+            font-size: 24px;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+        }
+
+        .navButton {
+            bottom: 80px;
+            border-top: #ffffff;
+            border-right: #ffffff;
+            border-bottom: #dd61c8;
+            border-left: #dd61c8;
+            border: 10px;
+            box-shadow: 0 10px 10px rgba(160, 59, 130, 0.1);
+            cursor: pointer;
+            background-color: #ec87be;
+            box-shadow: 0 3px 4px rgba(160, 59, 130, 0.753);
+            color: white;
+            padding: 10px 40px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            font-family: "Corben", serif;
+            font-weight: 400;
+            font-style: normal;
+            transition: 1s;
+        }
+
+        button:hover {
+
+            transform: scale(1.1);
+            transition: 1s;
+            /* Increase size by 10% on hover */
+            box-shadow: 0 -5px 20px 10px rgba(170, 66, 161, 0.418);
+        }
+
+        .fit-width {
+            width: 100%;
+            /* Set image width to 100% of parent div width */
+            height: auto;
+            /* Maintain aspect ratio */
+            display: block;
+            /* Ensure the image is displayed as a block element */
+        }
+
+        footer {
+            background-color: #f5c0df;
+            width: 100%;
+            height: 10%;
+            padding: 20px;
+            text-align: center;
+            bottom: -440px;
+            margin-top: auto;
+            position: absolute;
+        }
+
+        /* CSS for the footer links */
+        footer a {
+            color: #fff;
+            /* white color for text */
+            text-decoration: none;
+            /* remove underline */
+            margin: 0 10px;
+            /* add margin between links */
+        }
+
+        /* CSS for the footer links hover effect */
+        footer a:hover {
+            text-decoration: underline;
+            /* underline on hover */
+        }
+
+        .whole {
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            /* Ensure the image is displayed as a block element */
+            justify-content: space-evenly;
+            gap: 2em;
+            flex-wrap: wrap;
+        }
+
+        .find {
+            background-image: linear-gradient(305deg, hsl(151,59%,76%),hsl(202.429,59%,76%),hsl(253.857,59%,76%),hsl(305.286,59%,76%),hsl(356.714,59%,76%),hsl(86, 59%, 76%),hsl(150, 59%, 76%));
+           width: 300px;
+            height: max-content;
+            border: px solid #fff5f9;
+            padding: 20px;
+            border-radius: 20px 20px 20px 20px;
+            transition:  3s;
+        }
+
+  
+        .coquetteBox {
+            background-image: url('assets/pictures/notes.png');
+           width: 280px;
+            height: max-content;
+            border: 10px solid #f5c0df;
+            padding: 20px;
+            border-radius: 20px 20px 20px 20px;
+            transition:  3s;
+        }
+        .coquetteBox:hover {
+               border: 10px solid #95e6e9;
+            scale: 1.05;
+            box-shadow: 0 -5px 15px 10px rgba(170, 66, 161, 0.418);
+           transition:  1s;
+        }
+
+        .find:hover {
+            background-color:#ace9e4;
+           -webkit-text-fill-color: #ffffff;
+           -webkit-text-stroke-color: #215599;
+                          scale: 1.1;
+            box-shadow: 0 -5px 20px 10px rgba(170, 66, 161, 0.418);
+           transition:  1s;
+           top: 50px;
+           z-index: 30;
+        }
+     
+        .leftSide:hover {
+                          scale: 1.05;
+            box-shadow: 0 -5px 15px 10px rgba(170, 66, 161, 0.418);
+           transition:  1s;
+        }
+
+        .headerColor{
+           background-color:transparent;
+           padding: 0px;
+           margin: 0ps;
+           text-align: center;
+           border-radius: 70px 70px 20px 20px;
+        }
+
+        
+        .coquette{
+            font-family: "Damion", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  color: #68ccc7;
+  -webkit-text-stroke: 1px rgb(123, 84, 231);
+        }
+
+        .coquette2{
+            font-family: "Damion", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  padding: 0px;
+  color: #6ab3cf;
+  text-shadow: 1px 1px #d254d6;
+        }
+
+        .coquette3{
+            margin: 0px;
+            font-family: "Damion", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  padding: 0px;
+  color: #c9409b;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Cookie&family=Corben:wght@400;700&family=Jacquarda+Bastarda+9&family=Pixelify+Sans:wght@400..700&display=swap"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Damion&family=Send+Flowers&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Damion&family=Neonderthaw&family=Send+Flowers&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Damion&family=Molle&family=Neonderthaw&family=Send+Flowers&display=swap" rel="stylesheet">
+
+
+    <div class="banner">
+        <img src="assets/pictures/Title.png" alt="Image description">
+    </div>
+    <div class="whole"></div>
+
+        <div class="leftSide">
+
+            <img src="assets/pictures/triadPromo.png" alt="Image description" class="fit-width">
+            <h2>Current Series:</h2>
+            <h3>Triad of The Spirit Star</h3>
+            <p>Three girls are tasked with protecting their little village from the ravages of the Spirit world. They
+                must harness the energy of the Heaven, Hell and the Andromeda Stars to do so.
+            </p>
+            <button onclick="location.href='#games'" class="navButton">More Info?</button>
+        </div>
+
+        <div class="container">
+            <div class="header">
+                <h1>Home</h1>
+            </div>
+
+            <div class="navigation">
+                <button onclick="location.href='games/games.html'" class="navButton">Games</button>
+                <button onclick="location.href='#devlog'" class="navButton">Devlog</button>
+                <button onclick="location.href='#about'" class="navButton">About</button>
+                <button onclick="location.href='#zine'" class="navButton">Coquette</button>
+                <button onclick="location.href='#gallery'" class="navButton">Gallery</button>
+            </div>
+            <div class="description">
+                <p>The 80s, 90s and early 00s are behind us. <br><br>
+                    Yet, I still feel such nostalgia for the anime of those times. <br><br>
+                    The watercolor paints that textured out backgrounds. The flecks of dust and debris that flicked on
+                    our screen for less than half a second. The vibrant pastel of Sailor Moon and Cardcaptor Sakura
+                    muted by the camera.
+                    What were once limitations of the medium are the very things that drew me to the classics, and I
+                    only wish we could see more anime like that come out. This was the dream that birthed FairyTime
+                    Studio. <br><br>
+                    Here I promise not only to try to replicate that same magic but also to create games thst are more
+                    inclusive.
+                </p>
+            </div>
+            <div class="image-container">
+                <button onclick="location.href='totss/index.html';" class="shortlinks">
+                    <img src="assets/pictures/promo.png" alt="Image description">
+                    <button>
+                        <button onclick="location.href='#';" class="shortlinks">
+                            <img src="assets/pictures/promo2.png" alt="Image description">
+                            <button>
+                                <button onclick="location.href='#';" class="shortlinks">
+                                    <img src="assets/pictures/promo3.png" alt="Image description">
+                                    <button>
+            </div>
+
+        </div>
+
+        <div class="rightSide">
+
+            <div class="find">
+
+                <h3>Find Me Here</h3>
+                <button onclick="location.href='#games'" class="navButton">YouTube</button>
+                <button onclick="location.href='#games'" class="navButton">Instagram</button>
+                <button onclick="location.href='#games'" class="navButton">Tumblr</button>
+            </div>
+
+            <div class="find">
+                <h3>Support Me Here</h3>
+                <button onclick="location.href='#games'" class="navButton">Patreon</button>
+                <button onclick="location.href='#games'" class="navButton">Kofi</button>
+            </div>
+
+            <div  class="coquetteBox">
+                <div class="headerColor">
+                <h3 class="coquette">Coquette.</h3>
+            </div>
+                  <h4 class="coquette2">15/03/23 - Fruit</h4>
+                <p class="coquette3">Sicily’s blue lips had kissed death so often  <br>
+                    The soot of his breath clung between her teeth;<br>
+                    And when she breathed a gust of it went out<br>
+                    And rot the words before they came to me. <br>     
+                                        <button onclick="location.href='#games'" class="navButton">Read More</button>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#">Contact Us</a>
+    </footer>
+</body>
+
+</html>

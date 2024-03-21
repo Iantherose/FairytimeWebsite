@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fairytime Website</title>
+    <style>
+        body {
+            
+            background-image: url('assets/pictures/sky.png');
+            background-size: cover; /* Cover the entire screen with the background image */
+            background-position: center; /* Center the background image */
+            display: flex;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #f5c0df;
+            border: px solid #fff5f9;
+            padding: 20px;
+            width: 800px;
+            border-radius: 70px 70px 20px 20px;
+           
+            margin-top: 400px; /* Adjust the margin-top to position higher */
+        }
+
+        .leftSide{
+            width: 300px; /* Adjust width as needed */
+    height: auto; /* Full height of the viewport */
+    background-color: #ccc; /* Background color */
+    position: absolute; /* Fixed position */
+    left:  calc(10px + 0.5vw); /* Position on the left side */
+    top: 40; /* Start from the top */
+    background-color: #f5c0df;
+            border: px solid #fff5f9;
+            padding: 20px;
+            border-radius: 20px 20px 20px 20px;
+            margin-top: 600px; /* Adjust the margin-top to position higher */
+            color: #a84272 ;
+            font-size: 16px;
+            font-family: "Corben", serif;
+  font-weight: 400;
+  font-style: normal
+        }
+
+        .rightSide{
+            width: 300px; /* Adjust width as needed */
+    height: auto; /* Full height of the viewport */
+    position: absolute; /* Fixed position */
+    right:  calc(10px + 0.5vw); /* Position on the left side */
+    top: 0px; /* Start from the top */
+    background-color: #f5c0df;
+            border: px solid #fff5f9;
+            padding: 20px;
+            border-radius: 20px 20px 20px 20px;
+            margin-top: 400px; /* Adjust the margin-top to position higher */
+            color: #a84272 ;
+            font-size: 16px;
+            font-family: "Corben", serif;
+  font-weight: 400;
+  font-style: normal;
+  align-items: center;
+        }
+
+        .header {
+            background-image: url('assets/pictures/banner.png');
+            background-size: cover;
+            border-radius: 50px 50px 0 0;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .navigation {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .navigation button {
+            background-color: #ec87be;
+            box-shadow: 0 3px 4px rgba(160, 59, 130, 0.753);
+                        color: white;
+            padding: 10px 40px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            font-family: "Corben", serif;
+  font-weight: 400;
+  font-style: normal; 
+        }
+        .description {
+            text-align: left;
+            margin-top: 10px;
+            font-size: 20px;
+            align-content: center;
+        }
+
+    
+        .gamelinks {
+           width: 230px;
+           border-top: #ffffff;
+            border-right: #ffffff;
+            border-bottom: #dd61c8;
+            border-left: #dd61c8;
+            border: 10px;
+            padding-top: 15px;
+            margin-top: 20px;
+            box-shadow: 0 10px 10px rgba(160, 59, 130, 0.1);
+            cursor: pointer;
+            background-color: #ec87be;
+            box-shadow: 0 3px 4px rgba(160, 59, 130, 0.753);
+                        color: white;
+                                        display: inline-block;
+                        cursor: pointer;
+                  }
+
+        .large {
+            font-size: 60px;  
+            font-family: "Corben", serif;
+  font-weight: 400;
+  font-style: normal;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-top: 20px; /* Adjusted margin */
+            border-radius: 20px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 3px 4px rgba(160, 59, 130, 0.753);
+        } 
+
+        .shortlinks {
+            border-radius: 20px;
+         
+            
+            border: 10px;
+        }
+
+        h1 {
+            font-family: "Corben", serif;
+  font-weight: 400;
+  font-style: normal;
+        }
+
+        h2 {
+        margin: 0%;
+        }
+
+        h3 {
+        margin: 0%;
+        }
+
+
+        .banner {
+            position: absolute;
+            bottom: 500px;
+            text-align: left;
+            color: #fff;
+            font-size: 24px;
+           align-items: center;
+        }
+
+        .navButton {
+          bottom: 80px;
+          border-top: #ffffff;
+            border-right: #ffffff;
+            border-bottom: #dd61c8;
+            border-left: #dd61c8;
+            border: 10px;
+            box-shadow: 0 10px 10px rgba(160, 59, 130, 0.1);
+            cursor: pointer;
+            background-color: #ec87be;
+            box-shadow: 0 3px 4px rgba(160, 59, 130, 0.753);
+                        color: white;
+            padding: 10px 40px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            font-family: "Corben", serif;
+  font-weight: 400;
+  font-style: normal; 
+        }
+
+        button:hover {
+           
+    transform: scale(1.1); /* Increase size by 10% on hover */
+
+        }
+
+        .fit-width {
+    width: 100%; /* Set image width to 100% of parent div width */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure the image is displayed as a block element */
+} 
+    </style>
+</head>
+<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Cookie&family=Corben:wght@400;700&family=Jacquarda+Bastarda+9&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+
+    <div class="banner">
+        <img src="assets/pictures/Title.png" alt="Image description">
+</div>
+    <div class="container">
+        <div class="header">
+            <h1>Games</h1>
+        </div>
+        <div class="navigation">
+            
+            <button onclick="location.href='#devlog'" class="navButton">Devlog</button>
+            <button onclick="location.href='#about'" class="navButton">About</button>
+            <button onclick="location.href='#zine'" class="navButton">Zine</button>
+            <button onclick="location.href='#gallery'" class="navButton">Gallery</button>
+            <button onclick="location.href='#home'" class="navButton" >Home</button>
+        </div>
+        <div class="description">
+            <button onclick="location.href='totss/index.html';" class="gamelinks" >
+                <img src="assets/pictures/promo.png" alt="Image description">
+                <h3>Triad of The Spirit Star</h3>
+                <p>Three girls are tasked with protecting their little village from the ravages of the Spirit world. They must harness the energy of the Heaven, Hell and the Andromeda Stars to do so.
+                </p>
+                <button>
+                    <button onclick="location.href='totss/index.html';" class="gamelinks" >
+                        <img src="assets/pictures/promo.png" alt="Image description">
+                        <h3>Queer! A Powerpoint Games</h3>
+                        <p>Three girls are tasked with protecting their little village from the ravages of the Spirit world. They must harness the energy of the Heaven, Hell and the Andromeda Stars to do so.
+                        </p>
+                        <button>
+        </div>
+              
+    </div>
+    <div class="leftSide">
+
+        <img src="assets/pictures/triadPromo.png" alt="Image description" class="fit-width">
+        <h2>Current Series:</h2>
+        <h3>Triad of The Spirit Star</h3>
+        <p>Three girls are tasked with protecting their little village from the ravages of the Spirit world. They must harness the power of the Heaven, Hell and Andromeda Stars to do so.
+ </p>
+ <button onclick="location.href='#games'" class="navButton" >More Info?</button>
+    </div>
+    <div class="rightSide">
+
+               <h3>Find Me Here</h3>
+ <button onclick="location.href='#games'" class="navButton" >YouTube</button>
+ <button onclick="location.href='#games'" class="navButton" >Instagram</button>
+ <button onclick="location.href='#games'" class="navButton" >Tumblr</button>
+ 
+    </div> 
+
+    
+</body>
+</html>
