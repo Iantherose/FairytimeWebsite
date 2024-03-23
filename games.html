@@ -5,15 +5,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fairytime Website</title>
+    <style>
+        .navigation button {
+            background-color: #ec87be;
+            box-shadow: 0 3px 4px rgba(160, 59, 130, 0.753);
+            color: white;
+            padding: 10px 40px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            font-family: "Corben", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
 
+        .description {
+            text-align: left;
+            margin-top: 10px;
+            font-size: 20px;
+            align-content: center;
+        }
+
+
+        .gamelinks {
+            width: 230px;
+            border-top: #ffffff;
+            border-right: #ffffff;
+            border-bottom: #dd61c8;
+            border-left: #dd61c8;
+            border: 10px;
+            padding-top: 15px;
+            margin-top: 20px;
+            box-shadow: 0 10px 10px rgba(160, 59, 130, 0.1);
+            cursor: pointer;
+            background-color: #ec87be;
+            box-shadow: 0 3px 4px rgba(160, 59, 130, 0.753);
+            color: white;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .large {
+            font-size: 60px;
+            font-family: "Corben", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+            /* Adjusted margin */
+            border-radius: 20px;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 3px 4px rgba(160, 59, 130, 0.753);
+        }
+
+        .shortlinks {
+            border-radius: 20px;
+
+
+            border: 10px;
+        }
+
+        h1 {
+            font-family: "Corben", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        h2 {
+            margin: 0%;
+        }
+
+        h3 {
+            margin: 0%;
+        }
+
+
+        .banner {
+            position: absolute;
+            bottom: 500px;
+            text-align: left;
+            color: #fff;
+            font-size: 24px;
+            align-items: center;
+        }
+
+        .navButton {
+            bottom: 80px;
+            border-top: #ffffff;
+            border-right: #ffffff;
+            border-bottom: #dd61c8;
+            border-left: #dd61c8;
+            border: 10px;
+            box-shadow: 0 10px 10px rgba(160, 59, 130, 0.1);
+            cursor: pointer;
+            background-color: #ec87be;
+            box-shadow: 0 3px 4px rgba(160, 59, 130, 0.753);
+            color: white;
+            padding: 10px 40px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            font-family: "Corben", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+    </style>
 </head>
 
 <body>
-
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="style.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Clicker+Script&family=Cookie&family=Corben:wght@400;700&family=Jacquarda+Bastarda+9&family=Pixelify+Sans:wght@400..700&display=swap"
         rel="stylesheet">
@@ -40,60 +154,47 @@
     <link href="https://fonts.googleapis.com/css2?family=Sarina&family=Silkscreen:wght@400;700&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="style.css">
 
     <div class="banner">
         <img src="assets/pictures/Title.png" alt="Image description">
     </div>
-    <div class="whole"></div>
 
     <div class="leftSide">
 
         <img src="assets/pictures/triadPromo.png" alt="Image description" class="fit-width">
         <h2>Current Series:</h2>
         <h3>Triad of The Spirit Star</h3>
-        <p>Three girls are tasked with protecting their little village from the ravages of the Spirit world. They
-            must harness the energy of the Heaven, Hell and the Andromeda Stars to do so.
-            <br><br>
-            <b>Press the NEW slot to watch the latest episode!</b>
+        <p>Three girls are tasked with protecting their little village from the ravages of the Spirit world. They must
+            harness the power of the Heaven, Hell and Andromeda Stars to do so.
         </p>
         <button onclick="location.href='#games'" class="navButton">More Info?</button>
     </div>
-
     <div class="container">
         <div class="header">
-            <h1>Home</h1>
+            <h1>Games</h1>
         </div>
-
         <div class="navigation">
-            <button onclick="location.href='games.html'" class="navButton">Games</button>
+
             <button onclick="location.href='#devlog'" class="navButton">Devlog</button>
             <button onclick="location.href='#about'" class="navButton">About</button>
-            <button onclick="location.href='#zine'" class="navButton">Coquette</button>
+            <button onclick="location.href='#zine'" class="navButton">Zine</button>
             <button onclick="location.href='#gallery'" class="navButton">Gallery</button>
+            <button onclick="location.href='index.html'" class="navButton">Home</button>
         </div>
         <div class="description">
-            <p>The 80s, 90s and early 00s are behind us. <br><br>
-                Yet, I still feel such nostalgia for the anime of those times. <br><br>
-                The watercolor paints that textured out backgrounds. The flecks of dust and debris that flicked on
-                our screen for less than half a second. The vibrant pastel of Sailor Moon and Cardcaptor Sakura
-                muted by the camera.
-                What were once limitations of the medium are the very things that drew me to the classics, and I
-                only wish we could see more anime like that come out. This was the dream that birthed FairyTime
-                Studio. <br><br>
-                Here I promise not only to try to replicate that same magic but also to create games thst are more
-                inclusive.
-            </p>
-        </div>
-        <div class="image-container">
-            <button onclick="location.href='totss/index.html';" class="shortlinks">
+            <button onclick="location.href='totss/index.html';" class="gamelinks">
                 <img src="assets/pictures/promo.png" alt="Image description">
+                <h3>Triad of The Spirit Star</h3>
+                <h4>Episode 1: Mundane Beginnings</h4>
+                <p>Released: 30/03/2024 <br> Status: Incomplete</p>
                 <button>
-                    <button onclick="location.href='#';" class="shortlinks">
-                        <img src="assets/pictures/promo2.png" alt="Image description">
+                    <button onclick="location.href='totss/index.html';" class="gamelinks">
+                        <img src="assets/pictures/promo.png" alt="Image description">
+                        <h3>Triad of The Spirit Star</h3>
+                        <h4>Episode 1: Mundane Beginnings</h4>
+                        <p>Released: 30/03/2024 <br> Status: Incomplete</p>
                         <button>
-                            <button onclick="location.href='#';" class="shortlinks">
-                                <img src="assets/pictures/promo3.png" alt="Image description">
-                                <button>
         </div>
 
     </div>
@@ -126,7 +227,6 @@
                 <button onclick="location.href='#games'" class="navButton">Read More</button>
         </div>
 
-    </div>
     </div>
     <footer>
         <a href="#">Home</a>
