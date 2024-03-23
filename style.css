@@ -1,0 +1,379 @@
+body {
+        
+    background-image: url('assets/pictures/sky.png');
+    background-size: cover;
+    /* Cover the entire screen with the background image */
+    background-position: center;
+    /* Center the background image */
+    display: flex;
+flex-direction: row;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-image: radial-gradient(circle at bottom center, rgba(248,182,158, 0.55),rgb(245,192,223));
+    border: 2px double #f198cf;
+              padding: 20px;
+    width: 50%;
+    border-radius: 70px 70px 20px 20px;
+position: relative;
+    margin-top: 600px;
+    /* Adjust the margin-top to position higher */
+}
+
+.leftSide {
+    z-index: 30;
+    width: 300px;
+    /* Adjust width as needed */
+    height: min-content;
+           /* Background color */
+    left: calc(10px + 0.5vw);
+    /* Position on the left side */
+    top: 40;
+    /* Start from the top */
+    background-image: linear-gradient(227deg, rgb(245,192,223) 0%, rgb(245,192,223) 77%,rgb(248,171,207) 77%, rgb(248,171,207) 86%,rgb(219,248,204) 86%, rgb(219,248,204) 91%,rgb(174,225,209) 91%, rgb(174,225,209) 100%);
+    border: px solid #fff5f9;
+    padding: 20px;
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 600px;
+    /* Adjust the margin-top to position higher */
+    color: #c24c8d;
+    font-size: 16px;
+    font-family: "Corben", serif;
+    font-weight: 400;
+    font-style: normal;
+    transition:  3s;
+    
+}
+
+::-webkit-scrollbar {
+color: #ffffff;
+background-color: #ec87be;
+}
+
+::-webkit-scrollbar-thumb {
+background: linear-gradient(to bottom, #ffffff, #ec87be);
+-moz-outline-radius: 100px;
+}
+
+title{
+background-color: #ec87be;
+}
+.rightSide {
+    width: 300px;
+    /* Adjust width as needed */
+    height: max-content;
+    /* Full height of the viewport */
+    right: calc(10px + 0.5vw);
+    /* Position on the left side */
+    top: 0px;
+    /* Start from the top */
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 30%;
+    /* Adjust the margin-top to position higher */
+    color: #a84272;
+    font-size: 16px;
+    font-family: "Corben", serif;
+    font-weight: 400;
+    font-style: normal;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.header {
+    background-image: url('assets/pictures/banner.png');
+    background-size: cover;
+    border-radius: 50px 50px 0 0;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.navigation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.navigation button {
+    background-image: linear-gradient(0deg, rgba(216,202,10, 0.3) 0%,rgba(255, 189, 248, 0.3) 100%),linear-gradient(90deg, rgb(236,135,190),rgb(242,214,235));
+   border-radius: 20px;
+    box-shadow: 0 3px 4px rgba(160, 59, 130, 0.753);
+    text-shadow: 1px 1px 2px rgb(75, 15, 83);
+    border: 1px solid rgb(221, 181, 240);
+    border-bottom: 5px solid rgb(221, 181, 240);
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Corben", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+.description {
+    text-align: left;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+
+.description p {
+    color: #c24c8d;
+    font-size: 16px;
+    font-family: "Corben", serif;
+    font-weight: 400;
+    font-style: normal
+}
+
+.large {
+    font-size: 60px;
+    font-family: "Corben", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.image-container {
+    text-align: center;
+    margin-top: 20px;
+    /* Adjusted margin */
+    border-radius: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 3px 4px rgba(160, 59, 130, 0.753);
+}
+
+.shortlinks {
+    border-radius: 20px;
+
+    transition: 1s;
+    border: 10px;
+}
+
+h1 {
+    font-family: "Corben", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    font-family: "Sarina", cursive;
+font-weight: 400;
+font-style: normal;
+font-size: 30px;
+    margin: 0%;
+    color: #f7aad4;
+    background-image: linear-gradient(90deg, rgb(174,144,243),hsl(186,81%,76%),hsl(231,81%,76%),hsl(276,81%,76%),hsl(321,81%,76%),rgb(164,234,227),rgb(208,255,200),rgb(255,177,250));
+    text-shadow: 3px 2px 5px #ff0095;
+    
+}
+
+h3 {
+    margin: 0%;
+    color: #ffffff;
+    text-shadow: 2px 2px #f344aa;
+}
+
+b{
+color: #ffffff;
+text-shadow: 2px 2px #f344aa;
+
+}
+
+
+.banner {
+    display: block;
+    position: absolute;
+    bottom: 500px;
+    text-align: left;
+    color: #fff;
+    font-size: 24px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.navButton {
+    bottom: 80px;
+    border-top: #ffffff;
+    border-right: #ffffff;
+    border-bottom: #dd61c8;
+    border-left: #dd61c8;
+    border: 10px;
+    box-shadow: 0 10px 10px rgba(160, 59, 130, 0.1);
+    cursor: pointer;
+    background-color: #ec87be;
+    box-shadow: 0 3px 4px rgba(160, 59, 130, 0.753);
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: "Corben", serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: 1s;
+}
+
+button:hover {
+
+    transform: scale(1.1);
+    transition: 1s;
+    /* Increase size by 10% on hover */
+    box-shadow: 0 -5px 20px 10px rgba(170, 66, 161, 0.418);
+    z-index: 40;
+}
+
+.fit-width {
+    width: 100%;
+    /* Set image width to 100% of parent div width */
+    height: auto;
+    /* Maintain aspect ratio */
+    display: block;
+    /* Ensure the image is displayed as a block element */
+}
+
+footer {
+    background-color: #f5c0df;
+    width: 100%;
+    height: 10%;
+    padding: 20px;
+    text-align: center;
+    bottom: -440px;
+    margin-top: auto;
+    position: absolute;
+    z-index: 0;
+}
+
+/* CSS for the footer links */
+footer a {
+    color: #fff;
+    /* white color for text */
+    text-decoration: none;
+    /* remove underline */
+    margin: 0 10px;
+    /* add margin between links */
+}
+
+/* CSS for the footer links hover effect */
+footer a:hover {
+    text-decoration: underline;
+    /* underline on hover */
+}
+
+.whole {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    /* Ensure the image is displayed as a block element */
+    justify-content: space-evenly;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.find {
+    background-image: linear-gradient(305deg, hsl(151,59%,76%),hsl(202.429,59%,76%),hsl(253.857,59%,76%),hsl(305.286,59%,76%),hsl(356.714,59%,76%),hsl(86, 59%, 76%),hsl(150, 59%, 76%));
+   width: 300px;
+    height: max-content;
+    border: px solid #fff5f9;
+    padding: 20px;
+    border-radius: 20px 20px 20px 20px;
+    transition:  3s;
+}
+
+
+.coquetteBox {
+    background-image: url('assets/pictures/notes.png');
+   width: 280px;
+    height: max-content;
+    border: 10px solid #f5c0df;
+    padding: 20px;
+    border-radius: 20px 20px 20px 20px;
+    transition:  3s;
+}
+.coquetteBox:hover {
+       border: 10px solid #95e6e9;
+    scale: 1.05;
+    box-shadow: 0 -5px 15px 10px rgba(170, 66, 161, 0.418);
+   transition:  1s;
+}
+
+.find:hover {
+    background-color:#ace9e4;
+   -webkit-text-fill-color: #ffffff;
+   -webkit-text-stroke-color: #215599;
+                  scale: 1.1;
+    box-shadow: 0 -5px 20px 10px rgba(170, 66, 161, 0.418);
+   transition:  1s;
+   top: 50px;
+   z-index: 30;
+}
+
+.leftSide:hover {
+                  scale: 1.05;
+    box-shadow: 0 -5px 15px 10px rgba(170, 66, 161, 0.418);
+   transition:  1s;
+}
+
+.headerColor{
+   background-color:transparent;
+   padding: 0px;
+   margin: 0ps;
+   text-align: center;
+   border-radius: 70px 70px 20px 20px;
+}
+
+
+.coquette{
+    font-family: "Damion", cursive;
+font-weight: 400;
+font-style: normal;
+font-size: 50px;
+color: #68ccc7;
+-webkit-text-stroke: 1px rgb(123, 84, 231);
+}
+
+.coquette2{
+    font-family: "Damion", cursive;
+font-weight: 400;
+font-style: normal;
+font-size: 30px;
+padding: 0px;
+color: #6ab3cf;
+text-shadow: 1px 1px #d254d6;
+}
+
+.coquette3{
+    margin: 0px;
+    font-family: "Damion", cursive;
+font-weight: 400;
+font-style: normal;
+font-size: 20px;
+padding: 0px;
+color: #c9409b;
+}
