@@ -6,30 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fairytime Website</title>
     <style>
-        .navigation button {
-            background-color: #ec87be;
-            box-shadow: 0 3px 4px rgba(160, 59, 130, 0.753);
-            color: white;
-            padding: 10px 40px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            cursor: pointer;
-            font-family: "Corben", serif;
-            font-weight: 400;
-            font-style: normal;
-        }
+  
 
-        .description {
-            text-align: left;
-            margin-top: 10px;
-            font-size: 20px;
-            align-content: center;
-        }
+     
 
-
-        .gamelinks {
+        .gamelinksT {
             width: 230px;
             border-top: #ffffff;
             border-right: #ffffff;
@@ -40,41 +21,34 @@
             margin-top: 20px;
             box-shadow: 0 10px 10px rgba(160, 59, 130, 0.1);
             cursor: pointer;
-            background-color: #ec87be;
+            background-image: linear-gradient(158deg, rgb(141,250,246) 0%, rgb(141,250,246) 4%,rgb(126,218,221) 4%, rgb(126,218,221) 38%,rgb(118,173,227) 38%, rgb(118,173,227) 41%,rgb(162,113,236) 41%, rgb(162,113,236) 44%,rgb(203,109,246) 44%, rgb(203,109,246) 71%,rgb(246,77,229) 71%, rgb(246,77,229) 74%,rgb(234,85,175) 74%, rgb(234,85,175) 100%);
             box-shadow: 0 3px 4px rgba(160, 59, 130, 0.753);
             color: white;
             display: inline-block;
             cursor: pointer;
         }
 
-        .large {
-            font-size: 60px;
-            font-family: "Corben", serif;
-            font-weight: 400;
-            font-style: normal;
-        }
-
-        .image-container {
-            text-align: center;
-            margin-top: 20px;
-            /* Adjusted margin */
-            border-radius: 20px;
-        }
-
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 20px;
-            box-shadow: 0 3px 4px rgba(160, 59, 130, 0.753);
-        }
-
-        .shortlinks {
-            border-radius: 20px;
-
-
+        .gamelinksQ {
+            width: 230px;
+            border-top: #ffffff;
+            border-right: #ffffff;
+            border-bottom: #dd61c8;
+            border-left: #dd61c8;
             border: 10px;
+            padding-top: 15px;
+            margin-top: 20px;
+            box-shadow: 0 10px 10px rgba(160, 59, 130, 0.1);
+            cursor: pointer;
+            background-image: linear-gradient(135deg, rgb(80, 206, 110) 0%, rgb(80, 206, 110) 44%,rgb(45, 196, 106) 44%, rgb(45, 196, 106) 66%,rgb(10, 185, 102) 66%, rgb(10, 185, 102) 73%,rgb(151, 227, 119) 73%, rgb(151, 227, 119) 75%,rgb(116, 217, 115) 75%, rgb(116, 217, 115) 93%,rgb(186, 238, 123) 93%, rgb(186, 238, 123) 100%);
+            box-shadow: 0 3px 4px rgba(160, 59, 130, 0.753);
+            color: white;
+            display: inline-block;
+            cursor: pointer;
         }
 
+     
+
+    
         h1 {
             font-family: "Corben", serif;
             font-weight: 400;
@@ -87,7 +61,24 @@
 
         h3 {
             margin: 0%;
+            font-family: "Modak", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+text-shadow: 3px 2px 5px #7215c9;
+    
         }
+
+        h4 {
+            margin: 0%;
+            font-family: "Modak", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+text-shadow: 3px 2px 5px #7215c9;
+    
+        }
+
 
 
         .banner {
@@ -122,6 +113,11 @@
             font-style: normal;
         }
 
+        .buttonfont{
+            color: #fff;
+            text-shadow: 3px 2px 5px #7215c9;   
+        }
+
     </style>
 </head>
 
@@ -153,6 +149,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sarina&family=Silkscreen:wght@400;700&display=swap"
         rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Micro+5&family=Modak&family=Sarina&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 
@@ -183,17 +182,17 @@
             <button onclick="location.href='index.html'" class="navButton">Home</button>
         </div>
         <div class="description">
-            <button onclick="location.href='totss/index.html';" class="gamelinks">
+            <button onclick="location.href='totss/index.html';" class="gamelinksT">
                 <img src="assets/pictures/promo.png" alt="Image description">
                 <h3>Triad of The Spirit Star</h3>
                 <h4>Episode 1: Mundane Beginnings</h4>
-                <p>Released: 30/03/2024 <br> Status: Incomplete</p>
+                <p class="buttonfont">Released: 30/03/2024 <br> Status: Incomplete</p>
                 <button>
-                    <button onclick="location.href='totss/index.html';" class="gamelinks">
+                    <button onclick="location.href='totss/index.html';" class="gamelinksQ">
                         <img src="assets/pictures/promoQ.png" alt="Image description">
                         <h3>Queer! Powerpoint Game</h3>
                         <h4>Episode 1: Calamari</h4>
-                        <p>Created: 30/06/2016 <br> Status: Discontinued</p>
+                        <p class="buttonfont">Created: 30/06/2016 <br> Status: Discontinued</p>
                         <button>
         </div>
 
