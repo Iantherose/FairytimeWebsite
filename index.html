@@ -40,7 +40,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Sarina&family=Silkscreen:wght@400;700&display=swap"
         rel="stylesheet">
 
-
+<div class="loader">
+    <img src="assets/pictures/Fairy.gif" alt="Loading...">
+</div>
     <div class="banner">
         <img src="assets/pictures/Title.png" alt="Image description">
     </div>
@@ -137,3 +139,10 @@
 </body>
 
 </html>
+
+<script>
+window.addEventListener("load", function () {
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden"; // class "loader hidden"
+});
+</script>

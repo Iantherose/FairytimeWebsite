@@ -155,6 +155,9 @@ text-shadow: 3px 2px 5px #7215c9;
 
     <link rel="stylesheet" href="style.css">
 
+    <div class="loader">
+        <img src="assets/pictures/Fairy.gif" alt="Loading...">
+    </div>
     <div class="banner">
         <img src="assets/pictures/Title.png" alt="Image description">
     </div>
@@ -236,3 +239,10 @@ text-shadow: 3px 2px 5px #7215c9;
 </body>
 
 </html>
+
+<script>
+    window.addEventListener("load", function () {
+        const loader = document.querySelector(".loader");
+        loader.className += " hidden"; // class "loader hidden"
+    });
+    </script>
