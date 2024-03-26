@@ -25,6 +25,53 @@ button:hover {
     transition: 1s;
     /* Increase size by 10% on hover */
     box-shadow: 0 -5px 20px 10px rgba(170, 66, 161, 0.418);
-    z-index: 40;
+    z-index: 99;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('assets/sky.png');
+    background-size: cover;
+    overflow: hidden;
+    align-content: center;
+}
+#canvasArea {
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+.fairyRose {
+
+    margin-left: -100px;
+    margin-top: 20px;
+    opacity: 40%;
+    animation: slow-gif 5s linear infinite;
+    z-index: -1;
+}
+
+.fairyDandelion {
+
+margin-right: -100px;
+float: right;
+opacity: 40%;
+animation: slow-gif2 5s linear infinite;
+z-index: -1;
+}
+
+button {
+z-index: 99;
+}
+
+@keyframes slow-gif {
+0% { transform: scale(1); }
+50% { transform: scale(1.05); } /* Adjust scale value to slow down or speed up */
+100% { transform: scale(1); }
+}
+
+@keyframes slow-gif2 {
+    0% { transform: scale(1.05); }
+    50% { transform: scale(1); } /* Adjust scale value to slow down or speed up */
+    100% { transform: scale(1.05); }
+    }
