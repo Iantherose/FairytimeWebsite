@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<style>
+
+    
+.container {
+
+    margin-bottom: -300px;
+
+    /* Adjust the margin-top to position higher */
+}
+
+.footer {
+
+    top: -300px;
+}
+
+</style>
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,7 +58,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Sarina&family=Silkscreen:wght@400;700&display=swap"
         rel="stylesheet">
 
-
+        <div class="loader">
+            <img src="assets/pictures/Fairy.gif" alt="Loading...">
+        </div>
     <div class="banner">
         <img src="assets/pictures/Title.png" alt="Image description">
     </div>
@@ -67,7 +87,7 @@
         <div class="navigation">
             <button onclick="location.href='games.html'" class="navButton">Games</button>
             <button onclick="location.href='#devlog'" class="navButton">Devlog</button>
-            <button onclick="location.href='#about'" class="navButton">About</button>
+            <button onclick="location.href='index.html'" class="navButton">Home</button>
             <button onclick="location.href='#zine'" class="navButton">Coquette</button>
             <button onclick="location.href='#gallery'" class="navButton">Gallery</button>
         </div>
@@ -121,12 +141,14 @@
 
     </div>
     </div>
-    <footer>
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Services</a>
-        <a href="#">Contact Us</a>
-    </footer>
+
 </body>
 
 </html>
+
+<script>
+    window.addEventListener("load", function () {
+        const loader = document.querySelector(".loader");
+        loader.className += " hidden"; // class "loader hidden"
+    });
+    </script>
