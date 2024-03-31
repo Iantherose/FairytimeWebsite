@@ -59,7 +59,7 @@ gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.onCreat
 gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.onCreatedContext.GDObjectObjects2= [];
 
 
-gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.onCreatedContext.userFunc0x2844aa0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.onCreatedContext.userFunc0x12b7fd8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.SpriteRuntimeObject} */
 const sprite = objects[0];
@@ -120,7 +120,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Recolor
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.onCreatedContext.GDObjectObjects1);
-gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.onCreatedContext.userFunc0x2844aa0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.onCreatedContext.userFunc0x12b7fd8(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -197,7 +197,7 @@ gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.Recolor
 gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.RecolorizeContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.RecolorizeContext.userFunc0x28d1db0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.RecolorizeContext.userFunc0x12b7fd8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const behaviorName = eventsFunctionContext.getBehaviorName("Behavior");
 const behavior = objects[0].getBehavior(behaviorName);
@@ -218,7 +218,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Recolor
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.RecolorizeContext.GDObjectObjects1);
-gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.RecolorizeContext.userFunc0x28d1db0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.RecolorizeContext.userFunc0x12b7fd8(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -299,7 +299,7 @@ gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.ResetCo
 gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.ResetColorContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.ResetColorContext.userFunc0x2845858 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.ResetColorContext.userFunc0x12b7fd8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const behaviorName = eventsFunctionContext.getBehaviorName("Behavior");
 const behavior = objects[0].getBehavior(behaviorName);
@@ -314,7 +314,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Recolor
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.ResetColorContext.GDObjectObjects1);
-gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.ResetColorContext.userFunc0x2845858(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.ResetColorContext.userFunc0x12b7fd8(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -390,7 +390,7 @@ gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.doStepP
 gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.doStepPostEventsContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.doStepPostEventsContext.userFunc0x2844aa0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.doStepPostEventsContext.userFunc0x12b7fd8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 
 /** @type {gdjs.SpriteRuntimeObject} */
@@ -411,7 +411,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Recolor
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.doStepPostEventsContext.GDObjectObjects1);
-gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.doStepPostEventsContext.userFunc0x2844aa0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.doStepPostEventsContext.userFunc0x12b7fd8(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

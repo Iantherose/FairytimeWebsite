@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__YGameSDK__InitPlayer !== "undefined") {
 gdjs.evtsExt__YGameSDK__InitPlayer = {};
 
 
-gdjs.evtsExt__YGameSDK__InitPlayer.userFunc0x11fa550 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__YGameSDK__InitPlayer.userFunc0xc25978 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 var isInitPlayer = runtimeScene.getGame().getVariables().get("YGSDK_Player_IsInit");
 var player;
@@ -37,7 +37,7 @@ gdjs.evtsExt__YGameSDK__InitPlayer.eventsList0 = function(runtimeScene, eventsFu
 {
 
 
-gdjs.evtsExt__YGameSDK__InitPlayer.userFunc0x11fa550(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__YGameSDK__InitPlayer.userFunc0xc25978(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

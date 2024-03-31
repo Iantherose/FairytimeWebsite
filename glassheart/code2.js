@@ -5574,6 +5574,12 @@ gdjs.copyArray(runtimeScene.getObjects("speaker"), gdjs.Untitled_32sceneCode.GDs
 }{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDspeakerObjects1.length ;i < len;++i) {
     gdjs.Untitled_32sceneCode.GDspeakerObjects1[i].setGradient("LINEAR_VERTICAL", "247;234;107", "255;214;159", "255;152;202", "228;113;255");
 }
+}{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDdialogueObjects1.length ;i < len;++i) {
+    gdjs.Untitled_32sceneCode.GDdialogueObjects1[i].setOutlineEnabled(true);
+}
+}{for(var i = 0, len = gdjs.Untitled_32sceneCode.GDspeakerObjects1.length ;i < len;++i) {
+    gdjs.Untitled_32sceneCode.GDspeakerObjects1[i].setOutlineEnabled(true);
+}
 }}
 
 }
