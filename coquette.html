@@ -39,7 +39,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sarina&family=Silkscreen:wght@400;700&display=swap"
         rel="stylesheet">
-
+       
+<audio src="assets/pictures/newspaper-foley-15-196732.mp3"  id="paper" preload="auto"></audio>
 
 
         <div class="loader">
@@ -78,23 +79,43 @@
     <div class="description">
        
        
-        <button onclick="location.href='totss/index.html';" class="testButton1"><img src="assets/pictures/promoQ.png" alt=""></button>
-        <button class="testButton6"><img src="assets/pictures/promoQ.png" alt=""></button>
-        <button class="testButton1"><img src="assets/pictures/promoQ.png" alt=""></button>
-        <button class="testButton1"><img src="assets/pictures/Untitled-156.png" alt=""></button>
-        <button class="testButton6"><img src="assets/pictures/promoQ.png" alt=""></button>
-        <button class="testButton1"><img src="assets/pictures/blog.png" alt=""></button>
-        <button class="testButton1"><img src="assets/pictures/promoQ.png" alt=""></button>
-        <button class="testButton1"><img src="assets/pictures/promoQ.png" alt=""></button>
-        <button class="testButton6"><img src="assets/pictures/promoQ.png" alt=""></button>
-        <button class="testButton1"><img src="assets/pictures/promoQ.png" alt=""></button>
-        <button class="testButton6"><img src="assets/pictures/promoQ.png" alt=""></button>
-        <button class="testButton1"><img src="assets/pictures/kashouse65.png" alt=""></button>
+        <button onclick="location.href='totss/index.html';" class="testButton1"><img src="assets/pictures/promoQ.png"id="coqImg" alt=""></button>
+        <button class="testButton6"><img src="assets/pictures/promoQ.png" id="coqImg" alt=""></button>
+        <button class="poetryButton"><h4 class="coquettePoem2">15/03/23 - Fruit</h4><p class="coquettePoem">
+            Sicily’s blue lips had kissed death so often <br>
+            The soot of his breath clung between her teeth;<br>
+            And when she breathed a gust of it went out<br>
+            And rot the words before they came to me. <br>
+            Sicily’s blue lips had kissed death so often <br>
+            The soot of his breath clung between her teeth;<br>
+            And when she breathed a gust of it went out<br>
+            And rot the words before they came to me. <br></p>
+        </button>
+        <button class="testButton1"><img src="assets/pictures/Wonderful-Morning.gif" id="coqImg" alt=""></button>
+        <button class="testButton1"><img src="assets/pictures/Untitled-156.png" id="coqImg" alt=""></button>
+        <button class="testButton6"><img src="assets/pictures/promoQ.png" id="coqImg"  alt=""></button>
+        <button class="testButton1"><img src="assets/pictures/blog.png"  id="coqImg" alt=""></button>
+        <button onclick="location.href='coquette/persechron.html'" class="testButton1"> <video width="500" height="auto" autoplay loop muted src="assets/pictures/PersiVid2.mp4"></video></button>
+        <button class="testButton1"><img src="assets/pictures/promoQ.png" id="coqImg" alt=""></button>
+        <button class="testButton6"><img src="assets/pictures/promoQ.png" id="coqImg"  alt=""></button>
+        <button class="testButton1"><img src="assets/pictures/promoQ.png" id="coqImg" alt=""></button>
+        <button class="testButton6"><img src="assets/pictures/promoQ.png" id="coqImg" alt=""></button>
+        <button class="testButton1"><img src="assets/pictures/kashouse65.png" id="coqImg" alt=""></button>
         <button class="testButton1"><img src="assets/pictures/export202405271917484502.png" alt=""></button>
-        <button class="testButton1"><img src="assets/pictures/promoQ.png" alt=""></button>
-        <button class="testButton6"><img src="assets/pictures/promoQ.png" alt=""></button>
-        <button class="testButton1"><img src="assets/pictures/promoQ.png" alt=""></button>
-        <button class="testButton6"><img src="assets/pictures/promoQ.png" alt=""></button>
+        <button class="testButton1"><img src="assets/pictures/promoQ.png" id="coqImg" alt=""></button>
+        <button class="poetryButton"><h4 class="coquettePoem2">15/03/23 - Fruit</h4><p class="coquettePoem">
+            Sicily’s blue lips had kissed death so often <br>
+            The soot of his breath clung between her teeth;<br>
+            And when she breathed a gust of it went out<br>
+            And rot the words before they came to me. <br>
+            Sicily’s blue lips had kissed death so often <br>
+            The soot of his breath clung between her teeth;<br>
+            And when she breathed a gust of it went out<br>
+            And rot the words before they came to me. <br></p>
+        </button>
+
+        <button class="testButton1"><img src="assets/pictures/promoQ.png" id="coqImg" alt=""></button>
+        <button class="testButton6"><img src="assets/pictures/promoQ.png" id="coqImg" alt=""></button>
     </div>
 
     <br> <br> <br> <br> 
@@ -144,9 +165,22 @@
         const loader = document.querySelector(".loader");
         loader.className += " hidden"; // class "loader hidden"
     });
+
+    // Create an audio element
+	
+    var beepOne = $("#paper")[0];
+		$(".testButton1")
+	.mouseenter(function() {
+		beepOne.play();
+	});
+	
     </script>
 
 <STyle>
+
+    .vid {
+        color: #6ab3cf;
+    }
        .loader {
         position: fixed;
         z-index: 99;
@@ -254,14 +288,14 @@ body {
 
   top: 40%; 
   display: flex;
-     background-image: radial-gradient(circle at bottom center, #ffbaf0,rgb(163, 214, 235));
+     background-image: radial-gradient(circle at bottom center, #c7ccdb,rgb(254, 255, 244));
     
               padding: 20px;
     border-radius: 70px 70px 20px 20px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
- 
+}
 
 .image-container {
     text-align: center;
@@ -300,11 +334,9 @@ body {
 
 .navigation button {
     background-image: linear-gradient(0deg, rgba(216, 10, 130, 0.3) 0%,rgba(255, 189, 248, 0.3) 100%),linear-gradient(90deg, rgb(236,135,190),rgb(242,214,235));
-   border-radius: 20px;
+
     box-shadow: 0 3px 4px rgba(160, 59, 130, 0.753);
     text-shadow: 1px 1px 2px rgb(75, 15, 83);
-    border: 1px solid rgb(221, 181, 240);
-    border-bottom: 5px solid rgb(240, 234, 181);
     color: white;
     padding: 10px 40px;
     text-align: center;
@@ -328,7 +360,7 @@ box-shadow: 0 -5px 20px 10px rgba(170, 66, 161, 0.418);
 z-index: 40;
 }
 
-.testButton1, .testButton6{
+.testButton1, .testButton6, .poetryButton{
     padding-top: 20px;
     padding-bottom: 20px;
 border-color: #00000000;
@@ -338,7 +370,41 @@ transition:  2s;
 align-self: baseline;
 }
 
-.testButton1:hover, .testButton6:hover{
+.coqImg{
+    width:30%;
+}
+
+.poetryButton{
+
+background-image: radial-gradient(circle at 4% 15%, #d479cd 0%, #e28cdb 1.5%, transparent calc(1.5% + 1px), transparent 100%), radial-gradient(circle at 4% 50%, #d479cd 0%, #e28cdb 1.5%, transparent calc(1.5% + 1px), transparent 100%), radial-gradient(circle at 4% 85%, #d479cd 0%, #e28cdb 1.5%, transparent calc(1.5% + 1px), transparent 100%), linear-gradient(90deg, transparent 0%, transparent 10%, #df86c1 10%, #e69be9 calc(10% + 2px), transparent calc(10% + 2px), transparent 100%), linear-gradient(180deg, rgb(250, 233, 242) 12%, transparent 12%), repeating-linear-gradient(180deg, #91C1E1 0px, #dba1f1 1px, transparent 1px, transparent 30px), linear-gradient(rgb(250, 233, 242),rgb(239, 199, 247));
+padding-right: 30px;
+}
+
+.coquettePoem{
+    margin: 0px;
+    font-family: "Damion", cursive;
+font-weight: 400;
+font-style: normal;
+font-size: 20px;
+padding-left: 60px;
+left: 50px;
+color: #c9409b; 
+text-align: left; 
+}
+
+.coquettePoem2{
+    font-family: "Damion", cursive;
+font-weight: 400;
+font-style: normal;
+font-size: 30px;
+padding: 0%;
+margin:0% ;
+color: #6ab3cf;
+text-shadow: 1px 1px #d254d6;
+}
+
+
+.testButton1:hover, .testButton6:hover, .poetryButton:hover{
   
     transform: translate(0, -56px);
     margin-top: -30px;
@@ -402,7 +468,7 @@ background-color: #ec87be;
 }
 
 footer {
-    background-color: #a7d9f0;
+    background-color: #f0a7c3;
     width: 100%;
     height: 10%;
     padding: 20px;
@@ -443,7 +509,7 @@ footer a {
     height: min-content;
            /* Background color */
     /* Start from the top */
-    background-image: linear-gradient(227deg, rgb(245,192,223) 0%, rgb(245,192,223) 77%,rgb(248,171,207) 77%, rgb(248,171,207) 86%,rgb(219,248,204) 86%, rgb(219,248,204) 91%,rgb(174,225,209) 91%, rgb(174,225,209) 100%);
+    background-image: linear-gradient(305deg, hsl(34, 59%, 76%),hsl(340, 100%, 82%),hsl(335, 88%, 84%),hsl(340, 100%, 88%),hsl(69, 59%, 76%),hsl(86, 59%, 76%),hsl(76, 100%, 87%));
     border: px solid #fff5f9;
     padding: 20px;
     border-radius: 20px 20px 20px 20px;
@@ -685,7 +751,7 @@ font-weight: 400;
 font-style: normal;
 font-size: 150px;
 color: #92d2ddb0;
-text-shadow: 3px 3px #df88e2c5, -3px -3px #f1ef92c2;
+text-shadow: 3px 3px #e288adc5, -3px -3px #f1ef92c2;
 margin: 0%;
 
 }
@@ -702,7 +768,7 @@ margin: 0%;
 margin-top: -72px;
 margin-bottom: 130px;
 width: 35%;
-color: #d04dd4;
+color: #d44dab;
 }
 
 
