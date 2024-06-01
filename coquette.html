@@ -40,7 +40,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Sarina&family=Silkscreen:wght@400;700&display=swap"
         rel="stylesheet">
        
-<audio src="assets/pictures/newspaper-foley-15-196732.mp3"  id="paper" preload="auto"></audio>
 
 
         <div class="loader">
@@ -63,6 +62,17 @@
         <b>Press the NEW slot to watch the latest episode!</b>
     </p>
     <button onclick="location.href='#games'" class="navButton">More Info?</button>
+
+    <div class="image-container">
+        <button onclick="location.href='totss/index.html';" class="shortlinks">
+            <img src="assets/pictures/promo.png" alt="Image description">
+        </button>
+                <button onclick="location.href='#';" class="shortlinks">
+                    <img src="assets/pictures/promo2.png" alt="Image description">
+                </button>
+                        <button onclick="location.href='#';" class="shortlinks">
+                            <img src="assets/pictures/promo3.png" alt="Image description">
+                        </button> </div>
   </div>
 
 <div class="container">
@@ -79,8 +89,14 @@
     <div class="description">
        
        
-        <button onclick="location.href='totss/index.html';" class="testButton1"><img src="assets/pictures/promoQ.png"id="coqImg" alt=""></button>
-        <button class="testButton6"><img src="assets/pictures/promoQ.png" id="coqImg" alt=""></button>
+        <button class="testButtonAudio"><img src="assets/pictures/audio.png" id="coqImg" alt="">
+            <h4 class="musicFont">Singing Stars</h4><audio controls>
+               
+                <source src="assets/pictures/singing stars.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+              </audio></button>
+        <button class="testButton1"> <video  id="smallVid" width="420" height="auto" autoplay loop muted src="assets/pictures/glassheart menu.mp4"></video></button>
+        <button class="testButton1"><img src="assets/pictures/Untitled-156.png" id="coqImg" alt=""></button>
         <button class="poetryButton"><h4 class="coquettePoem2">15/03/23 - Fruit</h4><p class="coquettePoem">
             Sicily’s blue lips had kissed death so often <br>
             The soot of his breath clung between her teeth;<br>
@@ -91,18 +107,18 @@
             And when she breathed a gust of it went out<br>
             And rot the words before they came to me. <br></p>
         </button>
-        <button class="testButton1"><img src="assets/pictures/Wonderful-Morning.gif" id="coqImg" alt=""></button>
-        <button class="testButton1"><img src="assets/pictures/Untitled-156.png" id="coqImg" alt=""></button>
-        <button class="testButton6"><img src="assets/pictures/promoQ.png" id="coqImg"  alt=""></button>
+        
+        <button class="testButton1"><img src="assets/pictures/Wonderful-Morning.gif" title="Triad of the Spirit Star" id="coqImg" alt=""></button>
+        
         <button class="testButton1"><img src="assets/pictures/blog.png"  id="coqImg" alt=""></button>
         <button onclick="location.href='coquette/persechron.html'" class="testButton1"> <video width="500" height="auto" autoplay loop muted src="assets/pictures/PersiVid2.mp4"></video></button>
         <button class="testButton1"><img src="assets/pictures/promoQ.png" id="coqImg" alt=""></button>
-        <button class="testButton6"><img src="assets/pictures/promoQ.png" id="coqImg"  alt=""></button>
-        <button class="testButton1"><img src="assets/pictures/promoQ.png" id="coqImg" alt=""></button>
-        <button class="testButton6"><img src="assets/pictures/promoQ.png" id="coqImg" alt=""></button>
+        <button class="testButton1"> <video  id="smallVid" width="300" height="auto" autoplay loop muted src="assets/pictures/glassheartOP.mp4"></video></button>
+        <button class="testButton1"><img src="assets/pictures/kronos.png" id="coqImg" alt=""></button>
         <button class="testButton1"><img src="assets/pictures/kashouse65.png" id="coqImg" alt=""></button>
-        <button class="testButton1"><img src="assets/pictures/export202405271917484502.png" alt=""></button>
         <button class="testButton1"><img src="assets/pictures/promoQ.png" id="coqImg" alt=""></button>
+        <button class="testButton1"><img src="assets/pictures/export202405271917484502.png" alt=""></button>
+       
         <button class="poetryButton"><h4 class="coquettePoem2">15/03/23 - Fruit</h4><p class="coquettePoem">
             Sicily’s blue lips had kissed death so often <br>
             The soot of his breath clung between her teeth;<br>
@@ -113,6 +129,19 @@
             And when she breathed a gust of it went out<br>
             And rot the words before they came to me. <br></p>
         </button>
+
+        <button class="testButtonAudio"><img src="assets/pictures/audio.png" id="coqImg" alt="">
+            <h4 class="musicFont">Changing Skies</h4><audio controls>
+               
+                <source src="assets/pictures/CHANGING SKIES 3.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+              </audio></button>
+        <button class="testButtonAudio"><img src="assets/pictures/audio.png" id="coqImg" alt="">
+            <h4 class="musicFont">Lemonade</h4><audio controls>
+               
+                <source src="assets/pictures/lemonade.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+              </audio></button>
 
         <button class="testButton1"><img src="assets/pictures/promoQ.png" id="coqImg" alt=""></button>
         <button class="testButton6"><img src="assets/pictures/promoQ.png" id="coqImg" alt=""></button>
@@ -166,17 +195,28 @@
         loader.className += " hidden"; // class "loader hidden"
     });
 
-    // Create an audio element
+   
+
+$("#nav-two a")
+  .each(function(i) {
+    if (i != 0) {
+      $("#beep-two")
+        .clone()
+        .attr("id", "beep-two" + i)
+        .appendTo($(this).parent());
+    }
+    $(this).data("beeper", i);
+  })
+  .mouseenter(function() {
+    $("#beep-two" + $(this).data("beeper"))[0].play();
+  });
+$("#beep-two").attr("id", "beep-two0");
 	
-    var beepOne = $("#paper")[0];
-		$(".testButton1")
-	.mouseenter(function() {
-		beepOne.play();
-	});
 	
     </script>
 
 <STyle>
+
 
     .vid {
         color: #6ab3cf;
@@ -260,8 +300,19 @@ flex-grow: 2;
   box-sizing: border-box;
 }
 
+.smallVid:hover{
+    transition: 1s;
+width: 400px;
+}
+
+.smallVid{
+    transition: 1s;
+}
+
+
 body {
     background-image: url('assets/pictures/sky3.png');
+    animation: clouds_anim 60s linear infinite;
     background-size: cover;
   margin: 0;
   padding: 0;
@@ -277,6 +328,11 @@ body {
   font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+@keyframes clouds_anim{
+0%{background-position: 0 0;}
+100%{background-position: -1580px 0;}
 }
 
 .container {
@@ -360,7 +416,8 @@ box-shadow: 0 -5px 20px 10px rgba(170, 66, 161, 0.418);
 z-index: 40;
 }
 
-.testButton1, .testButton6, .poetryButton{
+.testButton1, .testButton6, .poetryButton, .testButtonAudio{
+   
     padding-top: 20px;
     padding-bottom: 20px;
 border-color: #00000000;
@@ -368,6 +425,58 @@ background-color: #ffffff;
 box-shadow: 0 -2px 5px 3px rgba(46, 14, 87, 0.281);
 transition:  2s;
 align-self: baseline;
+}
+
+
+
+audio{
+    width: 100%;
+}
+
+audio::-webkit-media-controls-panel {
+    background-image: linear-gradient(305deg, hsl(151,59%,76%),hsl(202.429,59%,76%),hsl(253.857,59%,76%),hsl(305.286,59%,76%),hsl(356.714,59%,76%),hsl(48.143,59%,76%),hsl(99.571,59%,76%));
+  border-radius: 0%;
+}
+
+audio::-webkit-media-controls-mute-button {
+  background-color: #fab6e6;
+  border-radius: 50%;
+}
+
+audio::-webkit-media-controls-play-button {
+  background-color:  rgb(150, 223, 247);
+  border-radius: 50%;
+}
+
+audio::-webkit-media-controls-play-button:hover {
+  background-color: rgb(150, 223, 247);
+  scale: 1.2;
+}
+
+audio::-webkit-media-controls-current-time-display {
+  color: #1a80c4;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+  color: #960c68;
+}
+
+audio::-webkit-media-controls-timeline {
+
+}
+
+audio::-webkit-media-controls-volume-slider {
+ 
+}
+
+.musicFont{
+    font-family: "Damion", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: #d44dab;
+    margin: 0%;
+    padding: 0%;
 }
 
 .coqImg{

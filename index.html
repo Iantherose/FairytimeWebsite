@@ -239,6 +239,7 @@ flex-grow: 2;
 
 body {
     background-image: url('assets/pictures/sky2.png');
+    animation: clouds_anim 70s linear infinite;
     background-size: cover;
   margin: 0;
   padding: 0;
@@ -255,6 +256,12 @@ body {
     margin: 0;
     padding: 0;
 }
+
+@keyframes clouds_anim{
+0%{background-position: 0 0;}
+100%{background-position: 0 -1400px;}
+}
+
 
 .container {
     position: absolute;
