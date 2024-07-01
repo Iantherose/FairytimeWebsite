@@ -40,6 +40,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Sarina&family=Silkscreen:wght@400;700&display=swap"
         rel="stylesheet">
         <link href="https://fonts.cdnfonts.com/css/art-nouveau-caps" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/apex-lake" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/eileen-caps" rel="stylesheet">
+                
+                
 <audio src="assets/pictures/newspaper-foley-15-196732.mp3"  id="paper" preload="auto"></audio>
 
 
@@ -48,7 +52,7 @@
         </div>
 
 </div><div class="banner">
-    <img src="../assets/pictures/Title3.png" class="bannerImg" alt="Image description">
+    <img src="../assets/pictures/Title2.png" class="bannerImg" alt="Image description">
 </div>
 <body>
     
@@ -81,6 +85,7 @@
     <div class="description">
         <button class="poetryButton">
         <h1 class="about">INTRODUCTION</h1>
+        <img src="../assets/pictures/persoWoman.png" id="coqImg" width="100%" alt="">   
         <p class="coquettep">In my third year of college, one of our lecturers tasked us with creating an unconventional clock. There were no constraints as to what we could create though it couldn't just be a rehash of the OG clock or a sundial or something that already been done before. We had to conceptualise our own unique model for telling time. Also, our idea didn't need to be practical in any sense, it was an exercise in creativity.
             <br><br>
             So I got to work thinking up potential ideas, moodboarding and all the like until I came up with something I was pretty proud of.  Then like with every assignment I've ever had throughout my schooling, I promptly forget about it. 
@@ -94,9 +99,9 @@
             <button class="testButton1"><img src="../assets/pictures/promoQ.png" id="coqImg" alt=""></button>
             
             <button class="poetryButton">
-                <h1 class="about">Concept stage</h1>
+                <h1 class="about">CONCEPT STAGE</h1>
 
-                <p class="coquettep"> <br><br><br>So, I wanna make an unconventional clock. Where do I start? The place I always start. Greek Mythology. 
+                <p class="coquettep">So, I wanna make an unconventional clock. Where do I start? The place I always start. Greek Mythology. 
                     <br><br>
                     If there's ten things you have to know about me, at least one of those things is my undying love/obsessions for mythology, fairytale and legends and Greek mythology was what sparked that curiosity. 
                     <br><br>
@@ -112,7 +117,7 @@
                     <img src="../assets/pictures/persephone.png" id="coqImg"  alt="">   </button>
 
                     <button class="poetryButton">
-                        <h1 class="about">More Concept stage</h1>
+                        <h1 class="about">MORE CONCEPT STAGE</h1>
         
                         <p class="coquettep"> But the part of the myth relevant to my clock project regards the idea of cycles. Persephone's descent into the Underworld dictating the beginning of winter and her re-emergence ushering in new spring. I wanted my clock to have a similar narrative. The light of our world descending into the black expanse of space and reappearing in the dawn. I also wanted to play into the duality of time. Life and Death. Day and night. Good and Evil. 
 
@@ -132,6 +137,7 @@
                     <button class="testButton1"><img src="../assets/pictures/persiEve.png" id="coqImg"  alt=""></button>
                     <button class="testButton1"><img src="../assets/pictures/persiNight.png" id="coqImg"  alt=""></button>
                     <button class="testButton1"> <video width="500" height="auto" autoplay loop muted src="../assets/pictures/PerseVid.mp4"></video></button>
+                    <button  class="testButton1"> <video width="600px" height="auto" autoplay loop muted src="../assets/pictures/persi open.mp4"></video></button>
                 </div>
 
     <br> <br> <br> <br> 
@@ -271,7 +277,7 @@ flex-grow: 2;
 }
 
 body {
-    background-image: url('../assets/pictures/sky3.png');
+    background-image: url('../assets/pictures/sky4.png');
     background-size: cover;
   margin: 0;
   padding: 0;
@@ -386,32 +392,11 @@ align-self: baseline;
 
 .poetryButton{
 
-background-image: radial-gradient(circle at 4% 15%, #d479cd 0%, #e28cdb 1.5%, transparent calc(1.5% + 1px), transparent 100%), radial-gradient(circle at 4% 50%, #d479cd 0%, #e28cdb 1.5%, transparent calc(1.5% + 1px), transparent 100%), radial-gradient(circle at 4% 85%, #d479cd 0%, #e28cdb 1.5%, transparent calc(1.5% + 1px), transparent 100%), linear-gradient(90deg, transparent 0%, transparent 10%, #df86c1 10%, #e69be9 calc(10% + 2px), transparent calc(10% + 2px), transparent 100%), linear-gradient(180deg, rgb(250, 233, 242) 12%, transparent 12%), repeating-linear-gradient(180deg, #91C1E1 0px, #dba1f1 1px, transparent 1px, transparent 30px), linear-gradient(rgb(250, 233, 242),rgb(239, 199, 247));
-padding-right: 30px;
+    background-image: url('../assets/pictures/patternPaper2.png');
+    background-size: 100%;
+    padding-right: 30px;
 }
 
-.coquettePoem{
-    margin: 0px;
-    font-family: "Damion", cursive;
-font-weight: 400;
-font-style: normal;
-font-size: 20px;
-padding-left: 60px;
-left: 50px;
-color: #c9409b; 
-text-align: left; 
-}
-
-.coquettePoem2{
-    font-family: "Damion", cursive;
-font-weight: 400;
-font-style: normal;
-font-size: 30px;
-padding: 0%;
-margin:0% ;
-color: #6ab3cf;
-text-shadow: 1px 1px #d254d6;
-}
 
 
 .testButton1:hover, .testButton6:hover, .poetryButton:hover{
@@ -444,7 +429,7 @@ transition:  1s;
 
 
 .description p {
-    color: #c24c8d;
+    
     font-size: 16px;
     font-family: "Corben", serif;
     font-weight: 400;
@@ -727,12 +712,13 @@ text-shadow: 2px 2px #f344aa0e;
 }
 
 .about {
-    font-family: 'Art Nouveau Caps', sans-serif;
+
+    font-family: 'EileenCaps-Black', sans-serif;
+    font-family: 'EileenCaps', sans-serif;
                                                 
-color: #ffffff;
-text-shadow: 3px 2px 5px #ff0095;
-background-image: linear-gradient(90deg, rgb(174,144,243),hsl(186,81%,76%),hsl(231,81%,76%),hsl(276,81%,76%),hsl(321,81%,76%),rgb(164,234,227),rgb(208,255,200),rgb(255,177,250));
-text-shadow: 3px 2px 5px #ff0095;
+font-size: 50px;
+                                                             
+color: #4216169f;
 width: 100%;
 text-align: left;
 }
@@ -749,12 +735,12 @@ text-shadow: 3px 2px 5px #d6469a;
 
 
 .coquetteHeader {
-    background-image: linear-gradient(90deg, transparent 0%, transparent 12%, rgb(243,147,231) 12%, rgb(243,147,231) calc(12% + 2px), transparent calc(12% + 2px), transparent calc(12% + 6px), rgb(243,147,231) calc(12% + 6px), rgb(243,147,231) calc(12% + 8px), transparent calc(12% + 8px), transparent 100%), linear-gradient(180deg, #f5ddf2 12%, transparent 12%), repeating-linear-gradient(180deg, rgb(191,152,215) 0px, rgb(191,152,215) 2px, transparent 2px, transparent 32px), linear-gradient(rgb(247, 223, 239),rgb(222, 181, 245));
+    background-image: url('../assets/pictures/patternPaper2.png');
     background-size: cover;
-    border-radius: 50px 50px 0 0;
+  
     color: #fff;
     padding: 20px;
-    padding-bottom: 140px;
+    padding-bottom: 20px;
     text-align: center;
     width: 100%;
    transform: rotate(1deg);
@@ -764,8 +750,11 @@ text-shadow: 3px 2px 5px #d6469a;
     font-family: 'Art Nouveau Caps', sans-serif;
                                                 
 font-size: 80px;
-color: #92d2ddb0;
-text-shadow: 3px 3px #e288adc5, -3px -3px #f1ef92c2;
+background: linear-gradient(to bottom, #cfc09fb4 27%, #ffecb3ad 40%, #3a2c0fd3 78%); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #fff;
+text-shadow: 3px 3px #88b2e257, -3px -3px #f1ef925b, 4px -2px #31170ba6;
 margin: 0%;
 
 }
@@ -776,9 +765,9 @@ margin: 0%;
     font-style: normal;
     font-size: 25px;
 text-align: left;
-max-width: 90%;
-margin-left: 80px;
-color: #d44dab;
+
+color: #2e251d94;
+margin-bottom: -20px;
 }
 
 
