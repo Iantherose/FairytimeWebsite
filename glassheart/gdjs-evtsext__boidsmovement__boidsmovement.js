@@ -55,6 +55,50 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement = class BoidsMovement e
     return true;
   }
 
+  // Network sync:
+  getNetworkSyncData() {
+    return {
+      ...super.getNetworkSyncData(),
+      props: {
+        
+    MaxSpeed: this._behaviorData.MaxSpeed,
+    MaxAcceleration: this._behaviorData.MaxAcceleration,
+    ShouldRotate: this._behaviorData.ShouldRotate,
+    CohesionRadius: this._behaviorData.CohesionRadius,
+    AlignmentRadius: this._behaviorData.AlignmentRadius,
+    SeparationRadius: this._behaviorData.SeparationRadius,
+    CohesionWeight: this._behaviorData.CohesionWeight,
+    AlignmentWeight: this._behaviorData.AlignmentWeight,
+    SeparationWeight: this._behaviorData.SeparationWeight,
+    TrajectoryDistance: this._behaviorData.TrajectoryDistance,
+      }
+    };
+  }
+  updateFromNetworkSyncData(networkSyncData) {
+    super.updateFromNetworkSyncData(networkSyncData);
+    
+    if (networkSyncData.props.MaxSpeed !== undefined)
+      this._behaviorData.MaxSpeed = networkSyncData.props.MaxSpeed;
+    if (networkSyncData.props.MaxAcceleration !== undefined)
+      this._behaviorData.MaxAcceleration = networkSyncData.props.MaxAcceleration;
+    if (networkSyncData.props.ShouldRotate !== undefined)
+      this._behaviorData.ShouldRotate = networkSyncData.props.ShouldRotate;
+    if (networkSyncData.props.CohesionRadius !== undefined)
+      this._behaviorData.CohesionRadius = networkSyncData.props.CohesionRadius;
+    if (networkSyncData.props.AlignmentRadius !== undefined)
+      this._behaviorData.AlignmentRadius = networkSyncData.props.AlignmentRadius;
+    if (networkSyncData.props.SeparationRadius !== undefined)
+      this._behaviorData.SeparationRadius = networkSyncData.props.SeparationRadius;
+    if (networkSyncData.props.CohesionWeight !== undefined)
+      this._behaviorData.CohesionWeight = networkSyncData.props.CohesionWeight;
+    if (networkSyncData.props.AlignmentWeight !== undefined)
+      this._behaviorData.AlignmentWeight = networkSyncData.props.AlignmentWeight;
+    if (networkSyncData.props.SeparationWeight !== undefined)
+      this._behaviorData.SeparationWeight = networkSyncData.props.SeparationWeight;
+    if (networkSyncData.props.TrajectoryDistance !== undefined)
+      this._behaviorData.TrajectoryDistance = networkSyncData.props.TrajectoryDistance;
+  }
+
   // Properties:
   
   _getMaxSpeed() {
@@ -152,7 +196,7 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onCreatedCont
 gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onCreatedContext.GDObjectObjects2= [];
 
 
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onCreatedContext.userFunc0xac7988 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onCreatedContext.userFunc0xaee048 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 
 runtimeScene.__boidsExtension = runtimeScene.__boidsExtension || {};
@@ -190,7 +234,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__BoidsMo
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onCreatedContext.GDObjectObjects1);
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onCreatedContext.userFunc0xac7988(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onCreatedContext.userFunc0xaee048(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -214,6 +258,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BoidsMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BoidsMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -268,7 +315,7 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.doStepPreEven
 gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.doStepPreEventsContext.GDObjectObjects2= [];
 
 
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.doStepPreEventsContext.userFunc0xac1990 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.doStepPreEventsContext.userFunc0xae7c00 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 runtimeScene.__boidsExtension.boidsManager.moveAll();
 };
@@ -280,7 +327,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__BoidsMo
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.doStepPreEventsContext.GDObjectObjects1);
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.doStepPreEventsContext.userFunc0xac1990(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.doStepPreEventsContext.userFunc0xae7c00(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -329,6 +376,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BoidsMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BoidsMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -415,6 +465,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BoidsMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BoidsMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -468,7 +521,7 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onActivateCon
 gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onActivateContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onActivateContext.userFunc0xac7988 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onActivateContext.userFunc0xaee698 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const object = objects[0];
 const behaviorName = eventsFunctionContext.getBehaviorName("Behavior");
@@ -483,7 +536,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__BoidsMo
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onActivateContext.GDObjectObjects1);
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onActivateContext.userFunc0xac7988(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onActivateContext.userFunc0xaee698(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -507,6 +560,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BoidsMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BoidsMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -559,7 +615,7 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDeActivateC
 gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDeActivateContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDeActivateContext.userFunc0xac7988 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDeActivateContext.userFunc0xaee6b0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const object = objects[0];
 const behaviorName = eventsFunctionContext.getBehaviorName("Behavior");
@@ -574,7 +630,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__BoidsMo
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDeActivateContext.GDObjectObjects1);
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDeActivateContext.userFunc0xac7988(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDeActivateContext.userFunc0xaee6b0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -598,6 +654,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BoidsMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BoidsMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -650,7 +709,7 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDestroyCont
 gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDestroyContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDestroyContext.userFunc0xac1990 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDestroyContext.userFunc0xaee688 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 
 const object = objects[0];
@@ -666,7 +725,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__BoidsMo
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDestroyContext.GDObjectObjects1);
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDestroyContext.userFunc0xac1990(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.onDestroyContext.userFunc0xaee688(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -690,6 +749,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BoidsMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BoidsMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -742,7 +804,7 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveInDirecti
 gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveInDirectionContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveInDirectionContext.userFunc0x12ecfd0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveInDirectionContext.userFunc0xae7c00 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const object = objects[0];
 const behaviorName = eventsFunctionContext.getBehaviorName("Behavior");
@@ -761,7 +823,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__BoidsMo
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveInDirectionContext.GDObjectObjects1);
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveInDirectionContext.userFunc0x12ecfd0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.MoveInDirectionContext.userFunc0xae7c00(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -785,6 +847,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BoidsMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BoidsMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -876,6 +941,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BoidsMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BoidsMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -990,6 +1058,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BoidsMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BoidsMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1196,6 +1267,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BoidsMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BoidsMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1312,6 +1386,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BoidsMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BoidsMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1369,7 +1446,7 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.SpeedContext 
 gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.SpeedContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.SpeedContext.userFunc0xac6fb0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.SpeedContext.userFunc0xaf03f0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const object = objects[0];
 const behaviorName = eventsFunctionContext.getBehaviorName("Behavior");
@@ -1388,7 +1465,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__BoidsMo
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.SpeedContext.GDObjectObjects1);
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.SpeedContext.userFunc0xac6fb0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.SpeedContext.userFunc0xaf03f0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -1412,6 +1489,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BoidsMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BoidsMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1464,7 +1544,7 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityXCont
 gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityXContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityXContext.userFunc0xac7988 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityXContext.userFunc0xaf0400 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const object = objects[0];
 const behaviorName = eventsFunctionContext.getBehaviorName("Behavior");
@@ -1483,7 +1563,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__BoidsMo
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityXContext.GDObjectObjects1);
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityXContext.userFunc0xac7988(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityXContext.userFunc0xaf0400(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -1507,6 +1587,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BoidsMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BoidsMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1559,7 +1642,7 @@ gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityYCont
 gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityYContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityYContext.userFunc0xac7988 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityYContext.userFunc0xaf0400 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const object = objects[0];
 const behaviorName = eventsFunctionContext.getBehaviorName("Behavior");
@@ -1578,7 +1661,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__BoidsMo
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityYContext.GDObjectObjects1);
-gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityYContext.userFunc0xac7988(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__BoidsMovement__BoidsMovement.BoidsMovement.prototype.VelocityYContext.userFunc0xaf0400(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -1602,6 +1685,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BoidsMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BoidsMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1690,6 +1776,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BoidsMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BoidsMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1780,6 +1869,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BoidsMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BoidsMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1876,6 +1968,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BoidsMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BoidsMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1962,6 +2057,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BoidsMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BoidsMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2048,6 +2146,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BoidsMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BoidsMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2134,6 +2235,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BoidsMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BoidsMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2223,6 +2327,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BoidsMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BoidsMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2310,6 +2417,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BoidsMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BoidsMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2399,6 +2509,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BoidsMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BoidsMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2486,6 +2599,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BoidsMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BoidsMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2575,6 +2691,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BoidsMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BoidsMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2662,6 +2781,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BoidsMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BoidsMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2751,6 +2873,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BoidsMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BoidsMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2838,6 +2963,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BoidsMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BoidsMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2927,6 +3055,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BoidsMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BoidsMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -3014,6 +3145,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BoidsMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BoidsMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -3103,6 +3237,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BoidsMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BoidsMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

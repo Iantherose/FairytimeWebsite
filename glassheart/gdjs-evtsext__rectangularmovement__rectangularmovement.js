@@ -61,6 +61,56 @@ gdjs.evtsExt__RectangularMovement__RectangularMovement.RectangularMovement = cla
     return true;
   }
 
+  // Network sync:
+  getNetworkSyncData() {
+    return {
+      ...super.getNetworkSyncData(),
+      props: {
+        
+    HorizontalSpeed: this._behaviorData.HorizontalSpeed,
+    VerticalSpeed: this._behaviorData.VerticalSpeed,
+    HorizontalDistance: this._behaviorData.HorizontalDistance,
+    VerticalDistance: this._behaviorData.VerticalDistance,
+    CenterPointX: this._behaviorData.CenterPointX,
+    CenterPointY: this._behaviorData.CenterPointY,
+    ProgressX: this._behaviorData.ProgressX,
+    ProgressY: this._behaviorData.ProgressY,
+    RectangularCounter: this._behaviorData.RectangularCounter,
+    ConstantSpeed: this._behaviorData.ConstantSpeed,
+    CounterClockwise: this._behaviorData.CounterClockwise,
+    CurrentDirection: this._behaviorData.CurrentDirection,
+      }
+    };
+  }
+  updateFromNetworkSyncData(networkSyncData) {
+    super.updateFromNetworkSyncData(networkSyncData);
+    
+    if (networkSyncData.props.HorizontalSpeed !== undefined)
+      this._behaviorData.HorizontalSpeed = networkSyncData.props.HorizontalSpeed;
+    if (networkSyncData.props.VerticalSpeed !== undefined)
+      this._behaviorData.VerticalSpeed = networkSyncData.props.VerticalSpeed;
+    if (networkSyncData.props.HorizontalDistance !== undefined)
+      this._behaviorData.HorizontalDistance = networkSyncData.props.HorizontalDistance;
+    if (networkSyncData.props.VerticalDistance !== undefined)
+      this._behaviorData.VerticalDistance = networkSyncData.props.VerticalDistance;
+    if (networkSyncData.props.CenterPointX !== undefined)
+      this._behaviorData.CenterPointX = networkSyncData.props.CenterPointX;
+    if (networkSyncData.props.CenterPointY !== undefined)
+      this._behaviorData.CenterPointY = networkSyncData.props.CenterPointY;
+    if (networkSyncData.props.ProgressX !== undefined)
+      this._behaviorData.ProgressX = networkSyncData.props.ProgressX;
+    if (networkSyncData.props.ProgressY !== undefined)
+      this._behaviorData.ProgressY = networkSyncData.props.ProgressY;
+    if (networkSyncData.props.RectangularCounter !== undefined)
+      this._behaviorData.RectangularCounter = networkSyncData.props.RectangularCounter;
+    if (networkSyncData.props.ConstantSpeed !== undefined)
+      this._behaviorData.ConstantSpeed = networkSyncData.props.ConstantSpeed;
+    if (networkSyncData.props.CounterClockwise !== undefined)
+      this._behaviorData.CounterClockwise = networkSyncData.props.CounterClockwise;
+    if (networkSyncData.props.CurrentDirection !== undefined)
+      this._behaviorData.CurrentDirection = networkSyncData.props.CurrentDirection;
+  }
+
   // Properties:
   
   _getHorizontalSpeed() {
@@ -1626,6 +1676,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("RectangularMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("RectangularMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1715,6 +1768,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("RectangularMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("RectangularMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1801,6 +1857,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("RectangularMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("RectangularMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1887,6 +1946,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("RectangularMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("RectangularMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1973,6 +2035,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("RectangularMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("RectangularMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2059,6 +2124,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("RectangularMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("RectangularMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2145,6 +2213,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("RectangularMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("RectangularMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2231,6 +2302,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("RectangularMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("RectangularMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2317,6 +2391,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("RectangularMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("RectangularMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2406,6 +2483,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("RectangularMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("RectangularMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2496,6 +2576,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("RectangularMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("RectangularMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2586,6 +2669,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("RectangularMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("RectangularMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2676,6 +2762,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("RectangularMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("RectangularMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2766,6 +2855,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("RectangularMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("RectangularMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2856,6 +2948,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("RectangularMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("RectangularMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2966,6 +3061,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("RectangularMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("RectangularMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -3076,6 +3174,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("RectangularMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("RectangularMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -3172,6 +3273,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("RectangularMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("RectangularMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -3267,6 +3371,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("RectangularMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("RectangularMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -3362,6 +3469,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("RectangularMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("RectangularMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -3457,6 +3567,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("RectangularMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("RectangularMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -3552,6 +3665,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("RectangularMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("RectangularMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__YGameSDK__ShowBanner !== "undefined") {
 gdjs.evtsExt__YGameSDK__ShowBanner = {};
 
 
-gdjs.evtsExt__YGameSDK__ShowBanner.userFunc0xc25978 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__YGameSDK__ShowBanner.userFunc0xc6ffc0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 
 try {
@@ -38,7 +38,7 @@ gdjs.evtsExt__YGameSDK__ShowBanner.eventsList0 = function(runtimeScene, eventsFu
 {
 
 
-gdjs.evtsExt__YGameSDK__ShowBanner.userFunc0xc25978(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__YGameSDK__ShowBanner.userFunc0xc6ffc0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -80,6 +80,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("YGameSDK"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("YGameSDK"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

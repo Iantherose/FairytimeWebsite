@@ -436,6 +436,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("SwipeGesture"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("SwipeGesture"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

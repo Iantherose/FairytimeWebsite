@@ -9,7 +9,7 @@ gdjs.evtsExt__RenderToSprite__RenderSceneArea = {};
 gdjs.evtsExt__RenderToSprite__RenderSceneArea.GDrenderTargetObjects1= [];
 
 
-gdjs.evtsExt__RenderToSprite__RenderSceneArea.userFunc0xcb1388 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__RenderToSprite__RenderSceneArea.userFunc0xcb6858 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const source = runtimeScene.getRenderer().getPIXIContainer();
 source.x = eventsFunctionContext.getArgument("originPositionX") * -1;
@@ -71,7 +71,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("renderTarget"), gdjs.evtsExt__R
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__RenderToSprite__RenderSceneArea.GDrenderTargetObjects1);
-gdjs.evtsExt__RenderToSprite__RenderSceneArea.userFunc0xcb1388(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__RenderToSprite__RenderSceneArea.userFunc0xcb6858(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -88,6 +88,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("RenderToSprite"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("RenderToSprite"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

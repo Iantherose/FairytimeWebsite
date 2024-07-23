@@ -37,6 +37,32 @@ gdjs.evtsExt__PanelSpriteSlider__Slider.Slider = class Slider extends gdjs.Runti
     return true;
   }
 
+  // Network sync:
+  getNetworkSyncData() {
+    return {
+      ...super.getNetworkSyncData(),
+      props: {
+        
+    Value: this._behaviorData.Value,
+    MinValue: this._behaviorData.MinValue,
+    MaxValue: this._behaviorData.MaxValue,
+    StepSize: this._behaviorData.StepSize,
+      }
+    };
+  }
+  updateFromNetworkSyncData(networkSyncData) {
+    super.updateFromNetworkSyncData(networkSyncData);
+    
+    if (networkSyncData.props.Value !== undefined)
+      this._behaviorData.Value = networkSyncData.props.Value;
+    if (networkSyncData.props.MinValue !== undefined)
+      this._behaviorData.MinValue = networkSyncData.props.MinValue;
+    if (networkSyncData.props.MaxValue !== undefined)
+      this._behaviorData.MaxValue = networkSyncData.props.MaxValue;
+    if (networkSyncData.props.StepSize !== undefined)
+      this._behaviorData.StepSize = networkSyncData.props.StepSize;
+  }
+
   // Properties:
   
   _getValue() {
@@ -127,6 +153,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("PanelSpriteSlider"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("PanelSpriteSlider"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -250,6 +279,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("PanelSpriteSlider"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("PanelSpriteSlider"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -337,6 +369,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("PanelSpriteSlider"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("PanelSpriteSlider"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -429,6 +464,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("PanelSpriteSlider"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("PanelSpriteSlider"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -516,6 +554,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("PanelSpriteSlider"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("PanelSpriteSlider"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -608,6 +649,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("PanelSpriteSlider"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("PanelSpriteSlider"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -695,6 +739,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("PanelSpriteSlider"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("PanelSpriteSlider"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -781,6 +828,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("PanelSpriteSlider"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("PanelSpriteSlider"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -873,6 +923,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("PanelSpriteSlider"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("PanelSpriteSlider"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

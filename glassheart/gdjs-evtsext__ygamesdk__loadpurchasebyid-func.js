@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__YGameSDK__LoadPurchaseByID !== "undefined") {
 gdjs.evtsExt__YGameSDK__LoadPurchaseByID = {};
 
 
-gdjs.evtsExt__YGameSDK__LoadPurchaseByID.userFunc0xd6f480 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__YGameSDK__LoadPurchaseByID.userFunc0xc6ffc0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 var purchaseID = eventsFunctionContext.getArgument("ID");
 
@@ -33,7 +33,7 @@ gdjs.evtsExt__YGameSDK__LoadPurchaseByID.eventsList0 = function(runtimeScene, ev
 {
 
 
-gdjs.evtsExt__YGameSDK__LoadPurchaseByID.userFunc0xd6f480(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__YGameSDK__LoadPurchaseByID.userFunc0xc6ffc0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -65,6 +65,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("YGameSDK"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("YGameSDK"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

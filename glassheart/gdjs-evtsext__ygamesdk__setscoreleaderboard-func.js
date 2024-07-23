@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__YGameSDK__SetScoreLeaderboard !== "undefined") {
 gdjs.evtsExt__YGameSDK__SetScoreLeaderboard = {};
 
 
-gdjs.evtsExt__YGameSDK__SetScoreLeaderboard.userFunc0xd6f480 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__YGameSDK__SetScoreLeaderboard.userFunc0xcb6858 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 var variableName = runtimeScene.getGame().getVariables().get(eventsFunctionContext.getArgument("VariableName"));
 var tableName = runtimeScene.getGame().getVariables().get(eventsFunctionContext.getArgument("TableName"))
@@ -27,7 +27,7 @@ gdjs.evtsExt__YGameSDK__SetScoreLeaderboard.eventsList0 = function(runtimeScene,
 {
 
 
-gdjs.evtsExt__YGameSDK__SetScoreLeaderboard.userFunc0xd6f480(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__YGameSDK__SetScoreLeaderboard.userFunc0xcb6858(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -42,6 +42,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("YGameSDK"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("YGameSDK"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

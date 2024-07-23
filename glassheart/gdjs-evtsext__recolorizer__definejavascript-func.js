@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__Recolorizer__DefineJavaScript !== "undefined") {
 gdjs.evtsExt__Recolorizer__DefineJavaScript = {};
 
 
-gdjs.evtsExt__Recolorizer__DefineJavaScript.userFunc0x181b308 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Recolorizer__DefineJavaScript.userFunc0x142a218 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 /**
  * Converts an HSL color value to RGB. Conversion formula
@@ -411,7 +411,7 @@ gdjs.evtsExt__Recolorizer__DefineJavaScript.eventsList0 = function(runtimeScene,
 {
 
 
-gdjs.evtsExt__Recolorizer__DefineJavaScript.userFunc0x181b308(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Recolorizer__DefineJavaScript.userFunc0x142a218(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -444,6 +444,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Recolorizer"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Recolorizer"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__YGameSDK__InitPayments !== "undefined") {
 gdjs.evtsExt__YGameSDK__InitPayments = {};
 
 
-gdjs.evtsExt__YGameSDK__InitPayments.userFunc0xd6f480 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__YGameSDK__InitPayments.userFunc0xcb6858 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 var isInitPayment = runtimeScene.getGame().getVariables().get("YGSDK_Payment_IsInit");
 isInitPayment.setBoolean(false);
@@ -28,7 +28,7 @@ gdjs.evtsExt__YGameSDK__InitPayments.eventsList0 = function(runtimeScene, events
 {
 
 
-gdjs.evtsExt__YGameSDK__InitPayments.userFunc0xd6f480(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__YGameSDK__InitPayments.userFunc0xcb6858(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -64,6 +64,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("YGameSDK"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("YGameSDK"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

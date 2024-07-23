@@ -25,6 +25,20 @@ gdjs.evtsExt__ShakeObject__ShakeObject_PositionAngleScale.ShakeObject_PositionAn
     return true;
   }
 
+  // Network sync:
+  getNetworkSyncData() {
+    return {
+      ...super.getNetworkSyncData(),
+      props: {
+        
+      }
+    };
+  }
+  updateFromNetworkSyncData(networkSyncData) {
+    super.updateFromNetworkSyncData(networkSyncData);
+    
+  }
+
   // Properties:
   
 }
@@ -323,6 +337,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ShakeObject"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ShakeObject"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1902,7 +1919,7 @@ gdjs.copyArray(gdjs.evtsExt__ShakeObject__ShakeObject_PositionAngleScale.ShakeOb
 }
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(23149388);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(23522860);
 }
 }
 if (isConditionTrue_0) {
@@ -1965,6 +1982,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ShakeObject"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ShakeObject"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2069,6 +2089,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ShakeObject"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ShakeObject"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -2164,6 +2187,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ShakeObject"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ShakeObject"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

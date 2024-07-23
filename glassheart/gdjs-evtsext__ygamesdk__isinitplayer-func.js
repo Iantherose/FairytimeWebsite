@@ -49,6 +49,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("YGameSDK"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("YGameSDK"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

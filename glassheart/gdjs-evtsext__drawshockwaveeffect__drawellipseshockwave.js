@@ -85,6 +85,80 @@ gdjs.evtsExt__DrawShockWaveEffect__DrawEllipseShockWave.DrawEllipseShockWave = c
     return true;
   }
 
+  // Network sync:
+  getNetworkSyncData() {
+    return {
+      ...super.getNetworkSyncData(),
+      props: {
+        
+    Start1Width: this._behaviorData.Start1Width,
+    Start2Height: this._behaviorData.Start2Height,
+    Start3Outline: this._behaviorData.Start3Outline,
+    Start4Color: this._behaviorData.Start4Color,
+    Start5Opacity: this._behaviorData.Start5Opacity,
+    Start6Angle: this._behaviorData.Start6Angle,
+    End1Width: this._behaviorData.End1Width,
+    End2Height: this._behaviorData.End2Height,
+    End3Outline: this._behaviorData.End3Outline,
+    End4Color: this._behaviorData.End4Color,
+    End5Opacity: this._behaviorData.End5Opacity,
+    End6Angle: this._behaviorData.End6Angle,
+    Behaviors: this._behaviorData.Behaviors,
+    Duration: this._behaviorData.Duration,
+    TweenName: this._behaviorData.TweenName,
+    Width: this._behaviorData.Width,
+    Height: this._behaviorData.Height,
+    Outline: this._behaviorData.Outline,
+    Color: this._behaviorData.Color,
+    Angle: this._behaviorData.Angle,
+      }
+    };
+  }
+  updateFromNetworkSyncData(networkSyncData) {
+    super.updateFromNetworkSyncData(networkSyncData);
+    
+    if (networkSyncData.props.Start1Width !== undefined)
+      this._behaviorData.Start1Width = networkSyncData.props.Start1Width;
+    if (networkSyncData.props.Start2Height !== undefined)
+      this._behaviorData.Start2Height = networkSyncData.props.Start2Height;
+    if (networkSyncData.props.Start3Outline !== undefined)
+      this._behaviorData.Start3Outline = networkSyncData.props.Start3Outline;
+    if (networkSyncData.props.Start4Color !== undefined)
+      this._behaviorData.Start4Color = networkSyncData.props.Start4Color;
+    if (networkSyncData.props.Start5Opacity !== undefined)
+      this._behaviorData.Start5Opacity = networkSyncData.props.Start5Opacity;
+    if (networkSyncData.props.Start6Angle !== undefined)
+      this._behaviorData.Start6Angle = networkSyncData.props.Start6Angle;
+    if (networkSyncData.props.End1Width !== undefined)
+      this._behaviorData.End1Width = networkSyncData.props.End1Width;
+    if (networkSyncData.props.End2Height !== undefined)
+      this._behaviorData.End2Height = networkSyncData.props.End2Height;
+    if (networkSyncData.props.End3Outline !== undefined)
+      this._behaviorData.End3Outline = networkSyncData.props.End3Outline;
+    if (networkSyncData.props.End4Color !== undefined)
+      this._behaviorData.End4Color = networkSyncData.props.End4Color;
+    if (networkSyncData.props.End5Opacity !== undefined)
+      this._behaviorData.End5Opacity = networkSyncData.props.End5Opacity;
+    if (networkSyncData.props.End6Angle !== undefined)
+      this._behaviorData.End6Angle = networkSyncData.props.End6Angle;
+    if (networkSyncData.props.Behaviors !== undefined)
+      this._behaviorData.Behaviors = networkSyncData.props.Behaviors;
+    if (networkSyncData.props.Duration !== undefined)
+      this._behaviorData.Duration = networkSyncData.props.Duration;
+    if (networkSyncData.props.TweenName !== undefined)
+      this._behaviorData.TweenName = networkSyncData.props.TweenName;
+    if (networkSyncData.props.Width !== undefined)
+      this._behaviorData.Width = networkSyncData.props.Width;
+    if (networkSyncData.props.Height !== undefined)
+      this._behaviorData.Height = networkSyncData.props.Height;
+    if (networkSyncData.props.Outline !== undefined)
+      this._behaviorData.Outline = networkSyncData.props.Outline;
+    if (networkSyncData.props.Color !== undefined)
+      this._behaviorData.Color = networkSyncData.props.Color;
+    if (networkSyncData.props.Angle !== undefined)
+      this._behaviorData.Angle = networkSyncData.props.Angle;
+  }
+
   // Properties:
   
   _getStart1Width() {
@@ -246,7 +320,7 @@ gdjs.evtsExt__DrawShockWaveEffect__DrawEllipseShockWave.DrawEllipseShockWave.pro
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(23414044);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(23791860);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__DrawShockWaveEffect__DrawEllipseShockWave.DrawEllipseShockWave.prototype.doStepPreEventsContext.GDObjectObjects1);
@@ -283,7 +357,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__DrawSho
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(23415804);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(23793620);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__DrawShockWaveEffect__DrawEllipseShockWave.DrawEllipseShockWave.prototype.doStepPreEventsContext.GDObjectObjects1);
@@ -393,6 +467,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Behaviors": this._getBehaviors()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("DrawShockWaveEffect"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("DrawShockWaveEffect"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -483,6 +560,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Behaviors": this._getBehaviors()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("DrawShockWaveEffect"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("DrawShockWaveEffect"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -574,6 +654,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Behaviors": this._getBehaviors()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("DrawShockWaveEffect"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("DrawShockWaveEffect"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -665,6 +748,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Behaviors": this._getBehaviors()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("DrawShockWaveEffect"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("DrawShockWaveEffect"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -756,6 +842,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Behaviors": this._getBehaviors()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("DrawShockWaveEffect"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("DrawShockWaveEffect"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -847,6 +936,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Behaviors": this._getBehaviors()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("DrawShockWaveEffect"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("DrawShockWaveEffect"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -938,6 +1030,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Behaviors": this._getBehaviors()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("DrawShockWaveEffect"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("DrawShockWaveEffect"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1029,6 +1124,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Behaviors": this._getBehaviors()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("DrawShockWaveEffect"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("DrawShockWaveEffect"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1120,6 +1218,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Behaviors": this._getBehaviors()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("DrawShockWaveEffect"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("DrawShockWaveEffect"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1182,7 +1283,7 @@ gdjs.evtsExt__DrawShockWaveEffect__DrawEllipseShockWave.DrawEllipseShockWave.pro
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(23437196);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(23815404);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__DrawShockWaveEffect__DrawEllipseShockWave.DrawEllipseShockWave.prototype.SetEndHeightContext.GDObjectObjects1);
@@ -1214,6 +1315,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Behaviors": this._getBehaviors()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("DrawShockWaveEffect"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("DrawShockWaveEffect"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1305,6 +1409,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Behaviors": this._getBehaviors()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("DrawShockWaveEffect"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("DrawShockWaveEffect"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1396,6 +1503,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Behaviors": this._getBehaviors()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("DrawShockWaveEffect"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("DrawShockWaveEffect"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1487,6 +1597,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Behaviors": this._getBehaviors()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("DrawShockWaveEffect"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("DrawShockWaveEffect"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1578,6 +1691,9 @@ var eventsFunctionContext = {
 "Behavior": Behavior
 , "Behaviors": this._getBehaviors()
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("DrawShockWaveEffect"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("DrawShockWaveEffect"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

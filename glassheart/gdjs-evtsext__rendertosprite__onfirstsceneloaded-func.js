@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__RenderToSprite__onFirstSceneLoaded !== "undefined") {
 gdjs.evtsExt__RenderToSprite__onFirstSceneLoaded = {};
 
 
-gdjs.evtsExt__RenderToSprite__onFirstSceneLoaded.userFunc0xc25978 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__RenderToSprite__onFirstSceneLoaded.userFunc0xc6ffc0 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 gdjs._renderToSprite = {};
 gdjs._renderToSprite.rt = PIXI.RenderTexture.create({ width: 100, height: 100 });
@@ -20,7 +20,7 @@ gdjs.evtsExt__RenderToSprite__onFirstSceneLoaded.eventsList0 = function(runtimeS
 {
 
 
-gdjs.evtsExt__RenderToSprite__onFirstSceneLoaded.userFunc0xc25978(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__RenderToSprite__onFirstSceneLoaded.userFunc0xc6ffc0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -35,6 +35,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("RenderToSprite"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("RenderToSprite"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

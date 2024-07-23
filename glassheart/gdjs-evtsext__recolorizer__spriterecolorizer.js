@@ -25,6 +25,20 @@ gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer = class SpriteRec
     return true;
   }
 
+  // Network sync:
+  getNetworkSyncData() {
+    return {
+      ...super.getNetworkSyncData(),
+      props: {
+        
+      }
+    };
+  }
+  updateFromNetworkSyncData(networkSyncData) {
+    super.updateFromNetworkSyncData(networkSyncData);
+    
+  }
+
   // Properties:
   
 }
@@ -59,7 +73,7 @@ gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.onCreat
 gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.onCreatedContext.GDObjectObjects2= [];
 
 
-gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.onCreatedContext.userFunc0x12b7fd8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.onCreatedContext.userFunc0xa8bc58 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /** @type {gdjs.SpriteRuntimeObject} */
 const sprite = objects[0];
@@ -120,7 +134,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Recolor
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.onCreatedContext.GDObjectObjects1);
-gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.onCreatedContext.userFunc0x12b7fd8(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.onCreatedContext.userFunc0xa8bc58(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -144,6 +158,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Recolorizer"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Recolorizer"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -197,7 +214,7 @@ gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.Recolor
 gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.RecolorizeContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.RecolorizeContext.userFunc0x12b7fd8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.RecolorizeContext.userFunc0xa8bc58 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const behaviorName = eventsFunctionContext.getBehaviorName("Behavior");
 const behavior = objects[0].getBehavior(behaviorName);
@@ -218,7 +235,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Recolor
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.RecolorizeContext.GDObjectObjects1);
-gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.RecolorizeContext.userFunc0x12b7fd8(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.RecolorizeContext.userFunc0xa8bc58(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -242,6 +259,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Recolorizer"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Recolorizer"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -299,7 +319,7 @@ gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.ResetCo
 gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.ResetColorContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.ResetColorContext.userFunc0x12b7fd8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.ResetColorContext.userFunc0xa8bc58 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const behaviorName = eventsFunctionContext.getBehaviorName("Behavior");
 const behavior = objects[0].getBehavior(behaviorName);
@@ -314,7 +334,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Recolor
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.ResetColorContext.GDObjectObjects1);
-gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.ResetColorContext.userFunc0x12b7fd8(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.ResetColorContext.userFunc0xa8bc58(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -338,6 +358,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Recolorizer"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Recolorizer"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -390,7 +413,7 @@ gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.doStepP
 gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.doStepPostEventsContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.doStepPostEventsContext.userFunc0x12b7fd8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.doStepPostEventsContext.userFunc0xa8bc58 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 
 /** @type {gdjs.SpriteRuntimeObject} */
@@ -411,7 +434,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Recolor
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.doStepPostEventsContext.GDObjectObjects1);
-gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.doStepPostEventsContext.userFunc0x12b7fd8(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Recolorizer__SpriteRecolorizer.SpriteRecolorizer.prototype.doStepPostEventsContext.userFunc0xa8bc58(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -435,6 +458,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Recolorizer"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Recolorizer"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -530,6 +556,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("Recolorizer"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("Recolorizer"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

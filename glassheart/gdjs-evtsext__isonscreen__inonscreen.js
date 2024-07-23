@@ -25,6 +25,20 @@ gdjs.evtsExt__IsOnScreen__InOnScreen.InOnScreen = class InOnScreen extends gdjs.
     return true;
   }
 
+  // Network sync:
+  getNetworkSyncData() {
+    return {
+      ...super.getNetworkSyncData(),
+      props: {
+        
+      }
+    };
+  }
+  updateFromNetworkSyncData(networkSyncData) {
+    super.updateFromNetworkSyncData(networkSyncData);
+    
+  }
+
   // Properties:
   
 }
@@ -58,7 +72,7 @@ gdjs.evtsExt__IsOnScreen__InOnScreen.InOnScreen.prototype.IsOnScreenContext = {}
 gdjs.evtsExt__IsOnScreen__InOnScreen.InOnScreen.prototype.IsOnScreenContext.GDObjectObjects1= [];
 
 
-gdjs.evtsExt__IsOnScreen__InOnScreen.InOnScreen.prototype.IsOnScreenContext.userFunc0xabe320 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__IsOnScreen__InOnScreen.InOnScreen.prototype.IsOnScreenContext.userFunc0xaf04c0 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 /*
 Get the object layer, convert the position from this layer to the screen coordinates.
@@ -108,7 +122,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__IsOnScr
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__IsOnScreen__InOnScreen.InOnScreen.prototype.IsOnScreenContext.GDObjectObjects1);
-gdjs.evtsExt__IsOnScreen__InOnScreen.InOnScreen.prototype.IsOnScreenContext.userFunc0xabe320(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__IsOnScreen__InOnScreen.InOnScreen.prototype.IsOnScreenContext.userFunc0xaf04c0(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -132,6 +146,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("IsOnScreen"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("IsOnScreen"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

@@ -28,6 +28,23 @@ gdjs.evtsExt__FPS__FPSDisplayer.FPSDisplayer = class FPSDisplayer extends gdjs.R
     return true;
   }
 
+  // Network sync:
+  getNetworkSyncData() {
+    return {
+      ...super.getNetworkSyncData(),
+      props: {
+        
+    prefix: this._behaviorData.prefix,
+      }
+    };
+  }
+  updateFromNetworkSyncData(networkSyncData) {
+    super.updateFromNetworkSyncData(networkSyncData);
+    
+    if (networkSyncData.props.prefix !== undefined)
+      this._behaviorData.prefix = networkSyncData.props.prefix;
+  }
+
   // Properties:
   
   _getprefix() {
@@ -103,6 +120,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("FPS"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("FPS"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

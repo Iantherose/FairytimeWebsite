@@ -153,7 +153,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(22950764);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(23318276);
 }
 }
 }
@@ -298,6 +298,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("SwipeGesture"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("SwipeGesture"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

@@ -46,6 +46,41 @@ gdjs.evtsExt__ScreenWrap__ScreenWrap.ScreenWrap = class ScreenWrap extends gdjs.
     return true;
   }
 
+  // Network sync:
+  getNetworkSyncData() {
+    return {
+      ...super.getNetworkSyncData(),
+      props: {
+        
+    HorizontalWrapping: this._behaviorData.HorizontalWrapping,
+    VerticalWrapping: this._behaviorData.VerticalWrapping,
+    BorderTop: this._behaviorData.BorderTop,
+    BorderLeft: this._behaviorData.BorderLeft,
+    BorderRight: this._behaviorData.BorderRight,
+    BorderBottom: this._behaviorData.BorderBottom,
+    TriggerOffset: this._behaviorData.TriggerOffset,
+      }
+    };
+  }
+  updateFromNetworkSyncData(networkSyncData) {
+    super.updateFromNetworkSyncData(networkSyncData);
+    
+    if (networkSyncData.props.HorizontalWrapping !== undefined)
+      this._behaviorData.HorizontalWrapping = networkSyncData.props.HorizontalWrapping;
+    if (networkSyncData.props.VerticalWrapping !== undefined)
+      this._behaviorData.VerticalWrapping = networkSyncData.props.VerticalWrapping;
+    if (networkSyncData.props.BorderTop !== undefined)
+      this._behaviorData.BorderTop = networkSyncData.props.BorderTop;
+    if (networkSyncData.props.BorderLeft !== undefined)
+      this._behaviorData.BorderLeft = networkSyncData.props.BorderLeft;
+    if (networkSyncData.props.BorderRight !== undefined)
+      this._behaviorData.BorderRight = networkSyncData.props.BorderRight;
+    if (networkSyncData.props.BorderBottom !== undefined)
+      this._behaviorData.BorderBottom = networkSyncData.props.BorderBottom;
+    if (networkSyncData.props.TriggerOffset !== undefined)
+      this._behaviorData.TriggerOffset = networkSyncData.props.TriggerOffset;
+  }
+
   // Properties:
   
   _getHorizontalWrapping() {
@@ -207,6 +242,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ScreenWrap"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ScreenWrap"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -451,6 +489,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ScreenWrap"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ScreenWrap"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -554,6 +595,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ScreenWrap"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ScreenWrap"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -655,6 +699,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ScreenWrap"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ScreenWrap"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -764,6 +811,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ScreenWrap"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ScreenWrap"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -874,6 +924,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ScreenWrap"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ScreenWrap"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -961,6 +1014,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ScreenWrap"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ScreenWrap"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1047,6 +1103,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ScreenWrap"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ScreenWrap"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1133,6 +1192,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ScreenWrap"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ScreenWrap"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1219,6 +1281,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ScreenWrap"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ScreenWrap"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1305,6 +1370,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ScreenWrap"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ScreenWrap"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1394,6 +1462,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ScreenWrap"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ScreenWrap"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1484,6 +1555,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ScreenWrap"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ScreenWrap"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1574,6 +1648,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ScreenWrap"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ScreenWrap"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1664,6 +1741,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ScreenWrap"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ScreenWrap"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -1754,6 +1834,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("ScreenWrap"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("ScreenWrap"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

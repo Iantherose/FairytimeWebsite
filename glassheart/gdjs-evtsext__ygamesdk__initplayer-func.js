@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__YGameSDK__InitPlayer !== "undefined") {
 gdjs.evtsExt__YGameSDK__InitPlayer = {};
 
 
-gdjs.evtsExt__YGameSDK__InitPlayer.userFunc0xc25978 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__YGameSDK__InitPlayer.userFunc0xcb6858 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 var isInitPlayer = runtimeScene.getGame().getVariables().get("YGSDK_Player_IsInit");
 var player;
@@ -37,7 +37,7 @@ gdjs.evtsExt__YGameSDK__InitPlayer.eventsList0 = function(runtimeScene, eventsFu
 {
 
 
-gdjs.evtsExt__YGameSDK__InitPlayer.userFunc0xc25978(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__YGameSDK__InitPlayer.userFunc0xcb6858(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -52,6 +52,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("YGameSDK"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("YGameSDK"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

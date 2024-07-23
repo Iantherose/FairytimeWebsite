@@ -25,6 +25,20 @@ gdjs.evtsExt__MouseHelper__cursor.cursor = class cursor extends gdjs.RuntimeBeha
     return true;
   }
 
+  // Network sync:
+  getNetworkSyncData() {
+    return {
+      ...super.getNetworkSyncData(),
+      props: {
+        
+      }
+    };
+  }
+  updateFromNetworkSyncData(networkSyncData) {
+    super.updateFromNetworkSyncData(networkSyncData);
+    
+  }
+
   // Properties:
   
 }
@@ -91,6 +105,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("MouseHelper"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("MouseHelper"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -180,6 +197,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("MouseHelper"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("MouseHelper"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -270,6 +290,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("MouseHelper"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("MouseHelper"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
@@ -360,6 +383,9 @@ var eventsFunctionContext = {
   _behaviorNamesMap: {
 "Behavior": Behavior
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("MouseHelper"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("MouseHelper"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },

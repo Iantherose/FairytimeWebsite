@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__BoidsMovement__DefineJavaScript !== "undefined") {
 gdjs.evtsExt__BoidsMovement__DefineJavaScript = {};
 
 
-gdjs.evtsExt__BoidsMovement__DefineJavaScript.userFunc0x181b308 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__BoidsMovement__DefineJavaScript.userFunc0x142a218 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 gdjs.__boidsExtension = gdjs.__boidsExtension || {};
 
@@ -476,7 +476,7 @@ gdjs.evtsExt__BoidsMovement__DefineJavaScript.eventsList0 = function(runtimeScen
 {
 
 
-gdjs.evtsExt__BoidsMovement__DefineJavaScript.userFunc0x181b308(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__BoidsMovement__DefineJavaScript.userFunc0x142a218(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
@@ -509,6 +509,9 @@ var eventsFunctionContext = {
 },
   _behaviorNamesMap: {
 },
+  globalVariablesForExtension: runtimeScene.getGame().getVariablesForExtension("BoidsMovement"),
+  sceneVariablesForExtension: runtimeScene.getScene().getVariablesForExtension("BoidsMovement"),
+  localVariables: [],
   getObjects: function(objectName) {
     return eventsFunctionContext._objectArraysMap[objectName] || [];
   },
