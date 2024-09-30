@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__Recolorizer__DefineJavaScript !== "undefined") {
 gdjs.evtsExt__Recolorizer__DefineJavaScript = {};
 
 
-gdjs.evtsExt__Recolorizer__DefineJavaScript.userFunc0x1de0608 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__Recolorizer__DefineJavaScript.userFunc0x1898428 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 /**
  * Converts an HSL color value to RGB. Conversion formula
@@ -411,7 +411,7 @@ gdjs.evtsExt__Recolorizer__DefineJavaScript.eventsList0 = function(runtimeScene,
 {
 
 
-gdjs.evtsExt__Recolorizer__DefineJavaScript.userFunc0x1de0608(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__Recolorizer__DefineJavaScript.userFunc0x1898428(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

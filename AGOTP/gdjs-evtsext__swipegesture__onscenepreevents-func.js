@@ -153,7 +153,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(28171756);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(23397620);
 }
 }
 }

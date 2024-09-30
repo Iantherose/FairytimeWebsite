@@ -1759,7 +1759,7 @@ isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 {gdjs.dialogueTree.loadFromJsonFile(runtimeScene, "assets\\TriadOfTheSpiritStar.json");
 }{gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "typewriter");
-}{gdjs.dialogueTree.startFrom("ep1_morning");
+}{gdjs.dialogueTree.startFrom("task1");
 }}
 
 }
@@ -6213,6 +6213,38 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.dialogueTree.isCommandCalled("doorway");
 if (isConditionTrue_0) {
+{/* Unknown object - skipped. */}{/* Unknown object - skipped. */}{/* Unknown object - skipped. */}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+/* Unknown object - skipped. */if (isConditionTrue_0) {
+{/* Unknown object - skipped. */}{/* Unknown object - skipped. */}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+{/* Unknown object - skipped. */}{/* Unknown object - skipped. */}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+/* Unknown object - skipped. */if (isConditionTrue_0) {
 {/* Unknown object - skipped. */}}
 
 }
@@ -6223,7 +6255,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.dialogueTree.isCommandCalled("doorwayDelete");
+isConditionTrue_0 = gdjs.dialogueTree.isCommandCalled("deleteDoorway");
 if (isConditionTrue_0) {
 {/* Unknown object - skipped. */}}
 
@@ -6376,6 +6408,18 @@ if (isConditionTrue_0) {
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 /* Unknown object - skipped. */if (isConditionTrue_0) {
+{/* Unknown object - skipped. */}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.dialogueTree.isCommandCalled("deleteVivaka");
+if (isConditionTrue_0) {
 {/* Unknown object - skipped. */}}
 
 }
@@ -7604,6 +7648,25 @@ gdjs.copyArray(runtimeScene.getObjects("CGs"), gdjs.VideosCode.GDCGsObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.dialogueTree.isCommandCalled("appleDiamonds");
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("CGs"), gdjs.VideosCode.GDCGsObjects1);
+{for(var i = 0, len = gdjs.VideosCode.GDCGsObjects1.length ;i < len;++i) {
+    gdjs.VideosCode.GDCGsObjects1[i].getBehavior("Animation").setAnimationName("appleDiamonds");
+}
+}{for(var i = 0, len = gdjs.VideosCode.GDCGsObjects1.length ;i < len;++i) {
+    gdjs.VideosCode.GDCGsObjects1[i].getBehavior("Effect").enableEffect("Effect", false);
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.dialogueTree.isCommandCalled("boxOpen");
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("CGs"), gdjs.VideosCode.GDCGsObjects1);
@@ -7642,7 +7705,64 @@ gdjs.copyArray(runtimeScene.getObjects("CGs"), gdjs.VideosCode.GDCGsObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.dialogueTree.isCommandCalled("box");
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("CGs"), gdjs.VideosCode.GDCGsObjects1);
+{for(var i = 0, len = gdjs.VideosCode.GDCGsObjects1.length ;i < len;++i) {
+    gdjs.VideosCode.GDCGsObjects1[i].getBehavior("Animation").setAnimationName("box");
+}
+}{for(var i = 0, len = gdjs.VideosCode.GDCGsObjects1.length ;i < len;++i) {
+    gdjs.VideosCode.GDCGsObjects1[i].getBehavior("Effect").enableEffect("Effect", false);
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.dialogueTree.isCommandCalled("rings");
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("CGs"), gdjs.VideosCode.GDCGsObjects1);
+{for(var i = 0, len = gdjs.VideosCode.GDCGsObjects1.length ;i < len;++i) {
+    gdjs.VideosCode.GDCGsObjects1[i].getBehavior("Animation").setAnimationName("rings");
+}
+}{for(var i = 0, len = gdjs.VideosCode.GDCGsObjects1.length ;i < len;++i) {
+    gdjs.VideosCode.GDCGsObjects1[i].getBehavior("Effect").enableEffect("Effect", false);
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.dialogueTree.isCommandCalled("dashaScream");
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("CGs"), gdjs.VideosCode.GDCGsObjects1);
+{for(var i = 0, len = gdjs.VideosCode.GDCGsObjects1.length ;i < len;++i) {
+    gdjs.VideosCode.GDCGsObjects1[i].getBehavior("Animation").setAnimationName("DashaScream");
+}
+}{for(var i = 0, len = gdjs.VideosCode.GDCGsObjects1.length ;i < len;++i) {
+    gdjs.VideosCode.GDCGsObjects1[i].getBehavior("Effect").enableEffect("Effect", false);
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.dialogueTree.isCommandCalled("dashaChest");
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("CGs"), gdjs.VideosCode.GDCGsObjects1);
 {for(var i = 0, len = gdjs.VideosCode.GDCGsObjects1.length ;i < len;++i) {
@@ -7960,6 +8080,158 @@ gdjs.copyArray(runtimeScene.getObjects("CGs"), gdjs.VideosCode.GDCGsObjects1);
 }
 }{/* Unknown object - skipped. */}{for(var i = 0, len = gdjs.VideosCode.GDCGsObjects1.length ;i < len;++i) {
     gdjs.VideosCode.GDCGsObjects1[i].getBehavior("Effect").setEffectDoubleParameter("Effect", "animationSpeed", 0.01);
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.dialogueTree.isCommandCalled("work");
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("CGs"), gdjs.VideosCode.GDCGsObjects1);
+{for(var i = 0, len = gdjs.VideosCode.GDCGsObjects1.length ;i < len;++i) {
+    gdjs.VideosCode.GDCGsObjects1[i].getBehavior("Animation").setAnimationName("work");
+}
+}{for(var i = 0, len = gdjs.VideosCode.GDCGsObjects1.length ;i < len;++i) {
+    gdjs.VideosCode.GDCGsObjects1[i].getBehavior("Effect").enableEffect("Effect", false);
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.dialogueTree.isCommandCalled("surprised");
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("CGs"), gdjs.VideosCode.GDCGsObjects1);
+{for(var i = 0, len = gdjs.VideosCode.GDCGsObjects1.length ;i < len;++i) {
+    gdjs.VideosCode.GDCGsObjects1[i].getBehavior("Animation").setAnimationName("surprised");
+}
+}{for(var i = 0, len = gdjs.VideosCode.GDCGsObjects1.length ;i < len;++i) {
+    gdjs.VideosCode.GDCGsObjects1[i].getBehavior("Effect").enableEffect("Effect", false);
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.dialogueTree.isCommandCalled("vivDoor");
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("CGs"), gdjs.VideosCode.GDCGsObjects1);
+{for(var i = 0, len = gdjs.VideosCode.GDCGsObjects1.length ;i < len;++i) {
+    gdjs.VideosCode.GDCGsObjects1[i].getBehavior("Animation").setAnimationName("vivDoor");
+}
+}{for(var i = 0, len = gdjs.VideosCode.GDCGsObjects1.length ;i < len;++i) {
+    gdjs.VideosCode.GDCGsObjects1[i].getBehavior("Effect").enableEffect("Effect", false);
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.dialogueTree.isCommandCalled("hug");
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("CGs"), gdjs.VideosCode.GDCGsObjects1);
+{for(var i = 0, len = gdjs.VideosCode.GDCGsObjects1.length ;i < len;++i) {
+    gdjs.VideosCode.GDCGsObjects1[i].getBehavior("Animation").setAnimationName("Hug");
+}
+}{for(var i = 0, len = gdjs.VideosCode.GDCGsObjects1.length ;i < len;++i) {
+    gdjs.VideosCode.GDCGsObjects1[i].getBehavior("Effect").enableEffect("Effect", false);
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.dialogueTree.isCommandCalled("grieve");
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("CGs"), gdjs.VideosCode.GDCGsObjects1);
+{for(var i = 0, len = gdjs.VideosCode.GDCGsObjects1.length ;i < len;++i) {
+    gdjs.VideosCode.GDCGsObjects1[i].getBehavior("Animation").setAnimationName("grieve");
+}
+}{for(var i = 0, len = gdjs.VideosCode.GDCGsObjects1.length ;i < len;++i) {
+    gdjs.VideosCode.GDCGsObjects1[i].getBehavior("Effect").enableEffect("Effect", false);
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.dialogueTree.isCommandCalled("scorn");
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("CGs"), gdjs.VideosCode.GDCGsObjects1);
+{for(var i = 0, len = gdjs.VideosCode.GDCGsObjects1.length ;i < len;++i) {
+    gdjs.VideosCode.GDCGsObjects1[i].getBehavior("Animation").setAnimationName("scorn");
+}
+}{for(var i = 0, len = gdjs.VideosCode.GDCGsObjects1.length ;i < len;++i) {
+    gdjs.VideosCode.GDCGsObjects1[i].getBehavior("Effect").enableEffect("Effect", false);
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.dialogueTree.isCommandCalled("bedroomCG");
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("CGs"), gdjs.VideosCode.GDCGsObjects1);
+{for(var i = 0, len = gdjs.VideosCode.GDCGsObjects1.length ;i < len;++i) {
+    gdjs.VideosCode.GDCGsObjects1[i].getBehavior("Animation").setAnimationName("scorn");
+}
+}{for(var i = 0, len = gdjs.VideosCode.GDCGsObjects1.length ;i < len;++i) {
+    gdjs.VideosCode.GDCGsObjects1[i].getBehavior("Effect").enableEffect("Effect", false);
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.dialogueTree.isCommandCalled("livingroomCG");
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("CGs"), gdjs.VideosCode.GDCGsObjects1);
+{for(var i = 0, len = gdjs.VideosCode.GDCGsObjects1.length ;i < len;++i) {
+    gdjs.VideosCode.GDCGsObjects1[i].getBehavior("Animation").setAnimationName("scorn");
+}
+}{for(var i = 0, len = gdjs.VideosCode.GDCGsObjects1.length ;i < len;++i) {
+    gdjs.VideosCode.GDCGsObjects1[i].getBehavior("Effect").enableEffect("Effect", false);
 }
 }}
 
