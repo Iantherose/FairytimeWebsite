@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__YGameSDK__LoadPurchaseByID !== "undefined") {
 gdjs.evtsExt__YGameSDK__LoadPurchaseByID = {};
 
 
-gdjs.evtsExt__YGameSDK__LoadPurchaseByID.userFunc0xccb010 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__YGameSDK__LoadPurchaseByID.userFunc0xd96120 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 var purchaseID = eventsFunctionContext.getArgument("ID");
 
@@ -33,7 +33,7 @@ gdjs.evtsExt__YGameSDK__LoadPurchaseByID.eventsList0 = function(runtimeScene, ev
 {
 
 
-gdjs.evtsExt__YGameSDK__LoadPurchaseByID.userFunc0xccb010(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__YGameSDK__LoadPurchaseByID.userFunc0xd96120(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

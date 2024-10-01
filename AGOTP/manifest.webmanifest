@@ -1,8 +1,8 @@
 {
-  "name": "Glassheart",
-  "short_name": "Glassheart",
+  "name": "A Game of Three Princes",
+  "short_name": "A Game of Three Princes",
   "id": "com.retro.spiritstar",
-  "description": "Glass Heart is the tale of Anya, a young princess who arrives at the Garden of Crowns. An academy open to the residents of Hedona with the express goal of grooming them to become diplomats, artists, scholars and, in Anya’s case, an alchemist.\n\nHer  idyllic life is interrupted one night as she is thrusted into a conflict between the princes of a neighbouring kingdom and a monstrous figure seeking an ancient power nestled within the heart of one of the princes.  \n\nWorse still, more witches are on their way as they're pulled from beyond the realm of the dead to the the bidding of a mysterious foe. \n\nNow Anya and the princes must undo the curses plaguing their hallways as well as unravel the secrets of the past. If they fail, the entire fate of the world will fall to entropy.",
+  "description": "Glass Heart is the tale of Anya, a young princess who arrives at the Garden of Crowns. An academy open to the residents of Hedona with the express goal of grooming them to become diplomats, artists, scholars and, in Anya’s case, an alchemist.\n\nHer  idyllic life is interrupted one night as she is thrusted into a conflict between the princes of a neighbouring kingdom and a monstrous figure seeking an ancient power nestled within the heart of one of the princes.  \n\nThe Belladonne family has had it rough for the last couple of years. After the patriarch of the family passes away and their wealth with him, they are forced to move to a little cottage in Morrowhill. \n\nFortunately, they might have the chance to gain back what was lost. At least that's what the letter says in the mysterious box that appeared on their doorstep. \n\nAll they have to do is play a game.",
   "orientation": "landscape",
   "start_url": "./index.html",
   "display": "standalone",

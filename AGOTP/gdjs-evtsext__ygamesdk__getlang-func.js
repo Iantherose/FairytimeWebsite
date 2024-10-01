@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__YGameSDK__GetLang !== "undefined") {
 gdjs.evtsExt__YGameSDK__GetLang = {};
 
 
-gdjs.evtsExt__YGameSDK__GetLang.userFunc0xccb010 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__YGameSDK__GetLang.userFunc0xcb58a8 = function GDJSInlineCode(runtimeScene, eventsFunctionContext) {
 "use strict";
 var lang_variable = runtimeScene.getGame().getVariables().get(eventsFunctionContext.getArgument("lang"));
 var l = window.ysdk.environment;
@@ -20,7 +20,7 @@ gdjs.evtsExt__YGameSDK__GetLang.eventsList0 = function(runtimeScene, eventsFunct
 {
 
 
-gdjs.evtsExt__YGameSDK__GetLang.userFunc0xccb010(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__YGameSDK__GetLang.userFunc0xcb58a8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

@@ -9,7 +9,7 @@ gdjs.evtsExt__RenderToSprite__RenderSceneArea = {};
 gdjs.evtsExt__RenderToSprite__RenderSceneArea.GDrenderTargetObjects1= [];
 
 
-gdjs.evtsExt__RenderToSprite__RenderSceneArea.userFunc0xccb010 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
+gdjs.evtsExt__RenderToSprite__RenderSceneArea.userFunc0xcb58a8 = function GDJSInlineCode(runtimeScene, objects, eventsFunctionContext) {
 "use strict";
 const source = runtimeScene.getRenderer().getPIXIContainer();
 source.x = eventsFunctionContext.getArgument("originPositionX") * -1;
@@ -71,7 +71,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("renderTarget"), gdjs.evtsExt__R
 
 var objects = [];
 objects.push.apply(objects,gdjs.evtsExt__RenderToSprite__RenderSceneArea.GDrenderTargetObjects1);
-gdjs.evtsExt__RenderToSprite__RenderSceneArea.userFunc0xccb010(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__RenderToSprite__RenderSceneArea.userFunc0xcb58a8(runtimeScene, objects, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
